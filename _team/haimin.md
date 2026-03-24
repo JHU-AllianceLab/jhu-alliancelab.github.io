@@ -4,7 +4,7 @@ subtitle: Assistant Professor
 job_title: Assistant Professor 
 category: pi
 layout: team_member_personal_page
-image: img/members/haimin.jpg
+image: img/members/haimin.JPG
 link-new-tab: true
 ---
 
