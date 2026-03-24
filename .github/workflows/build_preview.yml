@@ -1,0 +1,45 @@
+name: Build Preview
+
+on:
+  pull_request:
+    # Trigger on PRs targeting the 'source' branch
+    branches:
+      - source
+    # Define specific activities that trigger this workflow:
+    # opened: A new PR is created
+    # reopened: A closed PR is opened again (works for drafts too)
+    # synchronize: New commits are pushed to the PR
+    # review_requested: A new reviewer is assigned
+    types: [opened, reopened, synchronize, review_requested]
+
+permissions:
+  contents: read
+  # No write permissions needed as we are just building an artifact
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4 # v1.207.0
+        with:
+          bundler-cache: true
+          cache-version: 0
+
+      - name: Build with Jekyll
+        # Standard build. We do not set a baseurl so the site
+        # uses relative paths, making the downloadable zip easier to view.
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload Preview Artifact
+        # Creates a downloadable zip named 'site-preview'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: ./_site
+          retention-days: 5
