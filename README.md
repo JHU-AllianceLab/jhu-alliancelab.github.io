@@ -97,4 +97,4 @@ Add an entry to `_bibliography/references.bib`. Remember to add the `url` and `v
 
 # Acknowledgement
 
-This website is built on top of the [xLAB](https://xlab.upenn.edu/) website. We thank them for sharing their template.
+This project is built on top of the [xLAB](https://xlab.upenn.edu/) website and the original Bulma theme. We thank them for sharing their template.
