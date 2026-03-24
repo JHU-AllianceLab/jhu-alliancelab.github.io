@@ -1,0 +1,35 @@
+# Site Settings
+title: 'JHU Alliance AI Lab'
+tagline: We develop trustworthy robots that learn and teach.
+email: haimin@cs.jhu.edu
+description: >
+  Alliance AI Lab at Johns Hopkins University
+baseurl: ""
+url: "https://alliance-ai.cs.jhu.edu"
+
+# Theme
+remote_theme: chrisrhymes/bulma-clean-theme
+markdown: kramdown
+highlighter: rouge
+lang: en
+theme_color: '#002D72'
+permalink: pretty
+show_sidebar: false
+favicon: ./img/alliance-logo.png
+future: true
+
+collections:
+  team:
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x800
+    show_sidebar: false
+
+plugins:
+  - jekyll-scholar
+  - jekyll-remote-theme
+
+scholar:
+  style: simple-ieee.csl
+  bibliography_list_tag: "ul.no-bullet"
+  bibliography_template: bibtemplate

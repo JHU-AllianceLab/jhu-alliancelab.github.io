@@ -1,0 +1,111 @@
+<section class="hero
+    {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %}
+    is-bold is-primary
+    {% if page.hero_scrim %} hero--scrim {% endif %}
+    {% if page.hero_video %} hero-video {% endif %}" {% if page.hero_image and page.hero_video==nil %}
+  style="background: url('{{ page.hero_image | absolute_url }}') no-repeat center center; background-size: cover;" {%
+  endif %}>
+  <!-- Particle canvas -->
+  {% unless page.no_network %}
+  <canvas id="hero-canvas" class="{% if page.home %}hero-canvas--home{% else %}hero-canvas--sub{% endif %}"></canvas>
+  {% endunless %}
+
+  {% if page.hero_video %}
+  <video autoplay muted loop playsinline preload="metadata" {% if page.hero_fallback
+    %}poster="{{ page.hero_fallback | absolute_url }}" {% endif %}>
+    <source src="{{ page.hero_video | absolute_url }}" type="video/mp4">
+  </video>
+  {% endif %}
+
+  <div class="hero-body {% if page.hero_darken %}hero-darken{% endif %}">
+    <div class="container">
+      <h1 class="title is-2">{{ page.title }}</h1>
+      <p class="subtitle is-3">{{ page.subtitle }}</p>
+      {% if page.hero_link %}
+      <a href="{{ page.hero_link | relative_url }}" class="button is-info">
+        {{ page.hero_link_text }}
+      </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Scroll indicator (home page only) -->
+  {% if page.home %}
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    <span>Scroll</span>
+  </div>
+  {% endif %}
+</section>
+
+<script>
+  // ── Particle network on hero canvas ──
+  (function () {
+    var canvas = document.getElementById('hero-canvas');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var W, H, particles = [];
+    var isHome = canvas.classList.contains('hero-canvas--home');
+    var N = isHome ? 100 : 100;
+    var MAX_D = isHome ? 150 : 150;
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = canvas.getBoundingClientRect().height || canvas.offsetHeight;
+    }
+    window.addEventListener('resize', resize);
+
+    function Particle() {
+      this.reset();
+    }
+    Particle.prototype.reset = function () {
+      this.x = Math.random() * W;
+      this.y = Math.random() * H;
+      this.vx = (Math.random() - 0.5) * 0.45;
+      this.vy = (Math.random() - 0.5) * 0.45;
+      this.r = Math.random() * 1.8 + 0.8;
+    };
+    Particle.prototype.update = function () {
+      this.x += this.vx; this.y += this.vy;
+      if (this.x < 0 || this.x > W) this.vx *= -1;
+      if (this.y < 0 || this.y > H) this.vy *= -1;
+    };
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      for (var i = 0; i < N; i++) {
+        for (var j = i + 1; j < N; j++) {
+          var dx = particles[i].x - particles[j].x;
+          var dy = particles[i].y - particles[j].y;
+          var d = Math.sqrt(dx * dx + dy * dy);
+          if (d < MAX_D) {
+            var a = (1 - d / MAX_D) * 0.42;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.strokeStyle = 'rgba(104,172,229,' + a + ')';
+            ctx.lineWidth = 0.7;
+            ctx.stroke();
+          }
+        }
+      }
+      particles.forEach(function (p) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(104,172,229,0.75)';
+        ctx.fill();
+        p.update();
+      });
+      requestAnimationFrame(draw);
+    }
+
+    // Defer until layout is complete so getBoundingClientRect returns real dimensions
+    requestAnimationFrame(function () {
+      resize();
+      for (var i = 0; i < N; i++) particles.push(new Particle());
+      draw();
+    });
+  })();
+</script>

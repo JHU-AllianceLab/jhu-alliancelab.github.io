@@ -1,0 +1,24 @@
+- name: People
+  link: /people/
+  # dropdown:
+  #   - name: Current Members
+  #     link: /members/
+  #   - name: Alumni
+  #     link: /alumni/
+- name: Research
+  link: /research/
+- name: Publications
+  # link: /publications/
+  link: https://scholar.google.com/citations?user=_UYmNdEAAAAJ
+  new_tab: true
+# - name: News
+  # link: /news/
+- name: Courses
+  link: /courses/
+- name: Events
+  link: /events/
+- name: Software
+  link: https://github.com/JHU-AllianceLab
+  new_tab: true
+- name: Contact
+  link: /contact/

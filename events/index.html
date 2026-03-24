@@ -1,0 +1,34 @@
+---
+layout: default
+title: Events
+hero_height: is-small
+---
+
+{% assign today = "now" | date: "%Y-%m-%d" | date: "%s" %}
+
+<h1 class="title">Upcoming Events</h1>
+
+{% assign events = site.posts | where:"categories","events" | sort: "date" %}
+
+{% for event in events %}
+  {% assign event_ts = event.date | date: "%s" %}
+  {% if event_ts >= today %}
+    <div class="event-card">
+      {% include event-card.html event=event %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h1 class="title">Past Events</h1>
+
+{% assign reversed_events = events | reverse %}
+
+{% for event in reversed_events %}
+  {% assign event_ts = event.date | date: "%s" %}
+  {% if event_ts < today %}
+    <div class="event-card">
+      {% include event-card.html event=event %}
+    </div>
+  {% endif %}
+{% endfor %}
+

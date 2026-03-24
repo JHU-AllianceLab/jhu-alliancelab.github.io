@@ -1,0 +1,186 @@
+---
+layout: default
+show_sidebar: false
+---
+
+{{ page.content }}
+
+<h2 class="team-section-title">Principal Investigator</h2>
+<div class="columns is-multiline">
+  {% assign sorted_pi = site.team | where:"category","pi" %}
+  {% for product in sorted_pi %}
+  <div class="column is-3-desktop is-6-tablet reveal delay-1">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-5">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<h2 class="team-section-title">Current Collaborators</h2>
+<div class="columns is-multiline">
+  {% assign sorted_vis = site.team | where:"category","collaborator" %}
+  {% for product in sorted_vis %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+
+<!-- <h2 class="team-section-title">Postdocs &amp; Research Scientists</h2>
+<div class="columns is-multiline">
+  {% assign sorted_scientists = site.team | where:"category","scientist" %}
+  {% assign sorted_postdocs = site.team | where:"category","postdoc" %}
+  {% assign sorted_persons = sorted_scientists | concat: sorted_postdocs %}
+  {% for person in sorted_persons %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{{ person.url | absolute_url }}">
+      <div class="card team-card">
+        {% if person.image %}
+        <div class="card-image">
+          <img src="{{ person.image | absolute_url }}" alt="{{ person.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ person.title }}</p>
+          <p class="subtitle is-6">{{ person.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div> -->
+
+<h2 class="team-section-title">PhD Students</h2>
+<div class="columns is-multiline">
+  {% assign sorted_phd = site.team | where:"category","phd_student" %}
+  {% for product in sorted_phd %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<h2 class="team-section-title">Masters Students</h2>
+<div class="columns is-multiline">
+  {% assign sorted_ms = site.team | where:"category","master_student" %}
+  {% for product in sorted_ms %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<h2 class="team-section-title">Undergraduates</h2>
+<div class="columns is-multiline">
+  {% assign sorted_ug = site.team | where:"category","undergraduate" %}
+  {% for product in sorted_ug %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- <h2 class="team-section-title">Visitors</h2>
+<div class="columns is-multiline">
+  {% assign sorted_vis = site.team | where:"category","visitor" %}
+  {% for product in sorted_vis %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div> -->
+
+<!-- <h2 class="team-section-title">Alumni Ph.D. Students &amp; Postdocs</h2>
+<div class="columns is-multiline">
+  {% assign sorted_alumni = site.team | where:"category","alumni" %}
+  {% for product in sorted_alumni %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div> -->

@@ -1,0 +1,34 @@
+---
+layout: team_member_base
+---
+
+<div class="columns is-multiline">
+
+    <div class="column is-6">
+        <figure class="image is-3by3 mb-6">
+            <img class="rounded-rect" src="{{ page.image | absolute_url}}" />
+        </figure>
+
+        <div class="columns is-multiline">
+        {% assign highlights = site.posts | where_exp: "post", "post.author contains page.title" %}
+        {% for post in highlights %}
+            <div class="column is-6-desktop is-6-tablet">
+            {% include post-card.html %}
+            </div>
+        {% endfor %}
+        </div>
+
+    </div>
+
+
+
+    <div class="column is-6">
+        <!-- <p class="title is-3">{{ page.title }}</p>
+        <p class="subtitle is-3">{{ page.job_title }}</p> -->
+
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+
+</div>
