@@ -44,6 +44,12 @@ $radius-large: 10px;
   --glow-hover: 0 0 0 1px rgba(104, 172, 229, 0.55), 0 10px 36px rgba(0, 78, 179, 0.22);
 }
 
+.team-member-profile {
+  > .column.is-6:first-child {
+    padding-right: 3rem;
+  }
+}
+
 // ═══════════════════════════════════════════════════════
 //  SCROLL REVEAL
 // ═══════════════════════════════════════════════════════
