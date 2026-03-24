@@ -45,8 +45,9 @@ $radius-large: 10px;
 }
 
 .team-member-profile {
-  > .column.is-6:first-child {
-    padding-right: 3rem;
+  > .column.is-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
