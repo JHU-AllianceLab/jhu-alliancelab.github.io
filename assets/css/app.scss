@@ -142,7 +142,10 @@ pre {
 // ═══════════════════════════════════════════════════════
 .jhu-strip {
   background: var(--jhu-blue);
-  padding: .38rem 1.5rem;
+  padding: .38rem 0;
+}
+
+.jhu-strip .container {
   display: flex;
   align-items: center;
   gap: .55rem;
