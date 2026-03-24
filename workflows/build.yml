@@ -4,7 +4,6 @@ on:
   push:
     branches-ignore:
     - old_html
-    - main
     - gh-pages
 
 permissions:
