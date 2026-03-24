@@ -5,7 +5,8 @@ email: haimin@cs.jhu.edu
 description: >
   Alliance AI Lab at Johns Hopkins University
 baseurl: ""
-url: "https://alliance-ai.cs.jhu.edu"
+# url: "https://alliance-ai.cs.jhu.edu"
+url: "https://jhu-alliancelab.github.io"
 
 # Theme
 remote_theme: chrisrhymes/bulma-clean-theme
