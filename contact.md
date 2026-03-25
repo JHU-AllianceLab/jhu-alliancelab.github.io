@@ -46,3 +46,10 @@ Hackerman Hall
 Department of Computer Science<br>
 Johns Hopkins University<br>
 Baltimore, MD 21218
+
+
+## Visitors
+<div style="text-align:center; margin: 1.5rem 0;">
+  <!-- <p style="font-size:0.8rem; color:#888; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Visitors Worldwide</p> -->
+  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=pQa6Z3UFF7BhVKmMft00k48j1tSeVtKEKAAl4J60Bgs&w=250"></script>
+</div>
