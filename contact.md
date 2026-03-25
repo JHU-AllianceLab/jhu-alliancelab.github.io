@@ -17,7 +17,7 @@ Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research
 Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research proposal, CV, and description of your skills relevant to our lab's [work](/research/).
 
 ## Principle Investigator 
-**Haimin Hu**  
+<strong><a href="https://haiminhu.org" style="color:var(--jhu-blue); font-weight:700;">Prof. Haimin Hu</a></strong> <br>
 Office TBD <br>
 3400 N Charles St, Baltimore, MD 21218 <br>
 <!-- <i class="fas fa-phone"></i> <a href="tel:+15105618285">(510) 561-8285</a> <br> -->
