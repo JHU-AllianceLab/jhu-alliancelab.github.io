@@ -35,9 +35,9 @@ link: https://saferobotics.princeton.edu/research/who-plays-first
 # image: aic.jpg
 # hero_image: aic.jpg
 
-hero_video: https://haiminhu.wordpress.com/wp-content/uploads/2024/10/truck.mp4
+hero_video: https://haiminhu.wordpress.com/wp-content/uploads/2026/03/truck_low_res.mp4
 thumbnail: /img/posts/WPF/trucks.png
-video: https://haiminhu.wordpress.com/wp-content/uploads/2024/10/truck.mp4
+video: https://haiminhu.wordpress.com/wp-content/uploads/2026/03/truck_low_res.mp4
 
 # Set to true when ready to publish
 published: true
