@@ -17,8 +17,8 @@
   link: /courses/
 - name: Events
   link: /events/
-- name: Software
-  link: https://github.com/JHU-AllianceLab
+# - name: Software
+#   link: https://github.com/JHU-AllianceLab
   new_tab: true
 - name: Contact
   link: /contact/
