@@ -8,7 +8,7 @@ hero_height: is-small
 ## Opening Positions
 
 <p style="margin-bottom:.2rem"><strong>Prospective Ph.D. Students</strong></p>
-The 2026 application cycle has concluded. We plan to recruit Ph.D. students for Fall 2027.
+We are interviewing Fall 2026 applicants. We plan to recruit Ph.D. students for Fall 2027.
 
 <p style="margin-bottom:.2rem"><strong>Current JHU Students and Prospective RAs</strong></p>
 Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research interests, CV, and description of your skills relevant to our lab's [work](/research/).
