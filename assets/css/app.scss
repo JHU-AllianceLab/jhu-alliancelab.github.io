@@ -250,7 +250,10 @@ pre {
 //  HERO
 // ═══════════════════════════════════════════════════════
 .hero.is-primary {
-  background: var(--jhu-blue) !important;
+  background-color: var(--jhu-blue);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -267,6 +270,15 @@ pre {
 //   pointer-events: none;
 //   z-index: 0;
 // }
+
+.hero.is-primary.hero--scrim::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 45, 114, 0.65);
+  z-index: 0;
+  pointer-events: none;
+}
 
 .hero.is-primary::after {
   content: '';
@@ -475,6 +487,14 @@ pre {
 
 .hero.is-small .hero-body {
   padding: 2.5rem 1.5rem 2rem;
+}
+
+.hero.is-small-tall .hero-body {
+  padding: 7.5rem 1.5rem 6rem;
+}
+
+.hero.is-small-tall .title {
+  font-size: 2.0rem;
 }
 
 .hero.is-small .title {
