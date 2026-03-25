@@ -212,6 +212,16 @@ pre {
   transition: color .2s, border-color .2s !important;
 }
 
+.navbar.is-primary .navbar-item:focus,
+.navbar.is-primary .navbar-item:focus-visible,
+.navbar.is-primary .navbar-link:focus,
+.navbar.is-primary .navbar-link:focus-visible {
+  outline: none !important;
+  background: transparent !important;
+  color: var(--text-mid) !important;
+  border-bottom-color: transparent !important;
+}
+
 .navbar.is-primary .navbar-item:hover,
 .navbar.is-primary .navbar-link:hover {
   background: transparent !important;
