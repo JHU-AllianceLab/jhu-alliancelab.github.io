@@ -21,14 +21,16 @@ He has received several awards and recognitions, including a 2026 Penn AI Fellow
 Currently, he serves as an Associate Editor for IEEE Robotics and Automation Letters (RA-L). He received a PhD (2025) and an MA (2022) in Electrical and Computer Engineering from Princeton University, an MSE (2020) in Electrical Engineering from the University of Pennsylvania, and a BEng (2018) in Electronic and Information Engineering from ShanghaiTech University. From 2025 to 2026, he was a postdoctoral fellow with the PRECISE Center and the GRASP Lab at the University of Pennsylvania.
 
 
-## Contact
+## Links
 
 <div class="contact-links">
+<a href="https://haiminhu.org/wp-content/uploads/2026/03/haimin_hu_cv-1.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
 <a href="mailto:haimin@cs.jhu.edu" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+<a href="https://scholar.google.com/citations?hl=en&user=_UYmNdEAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
 <a href="https://haiminhu.org/" target="_blank"><i class="fas fa-globe"></i> Personal Website</a>
 <a href="https://www.cs.jhu.edu/faculty/haimin-hu/" target="_blank"><i class="fas fa-university"></i> JHU Website</a>
 <a href="https://www.linkedin.com/in/haiminhu/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-<a href="https://scholar.google.com/citations?hl=en&user=_UYmNdEAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+<a href="https://x.com/HaiminHu" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
 <a href="https://github.com/HaiminClack" target="_blank"><i class="fab fa-github"></i> Github</a>
 </div>
 
