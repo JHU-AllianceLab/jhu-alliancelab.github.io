@@ -65,9 +65,9 @@ After this class, you will be familiar with the state of the art and open challe
 
 ## Learning Objectives
 
-- You will learn to **formulate human–robot interaction problems** using tools from game theory, machine learning, and dynamical systems.
+- You will learn to **formulate human–robot interaction problems** using tools from game theory, machine learning, dynamical systems, and cognitive science.
 
-- You will explore how different mathematical models can help **inform robot decision-making** in safety-critical, interactive settings.
+- You will explore how different mathematical models can help **inform robot decision-making** in safety-critical, human-interactive settings.
 
 - You will learn **principles and algorithms for ensuring safety** when deploying robots in human-populated environments, including safety filters, dynamic games, planning under uncertainty, and learning-based approaches, and understand different guarantees and tradeoffs associated with various decision-making frameworks.
 
