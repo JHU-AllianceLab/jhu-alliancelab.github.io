@@ -35,7 +35,7 @@ Johns Hopkins University <br>
 <!-- Google Maps Embed -->
 <div style="position: relative; width: 75%; padding-bottom: 26.25%; margin: 10px 0;">
   <iframe
-    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s39.3262044,-76.6208832!6i17"
+    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sDepartment+of+Computer+Science,+Malone+Hall,+Johns+Hopkins+University"
     style="border:0; position: absolute; top:0; left:0; width:75%; height:100%;"
     allowfullscreen=""
     loading="lazy"
