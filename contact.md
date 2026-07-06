@@ -50,10 +50,10 @@ Johns Hopkins University <br>
 3400 N. Charles St., Baltimore, MD 21218 -->
 
 
-<!-- ## Visitors -->
-<!-- <div style="margin: 1.5rem 0;"> -->
-  <!-- <p style="font-size:0.8rem; color:#888; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Visitors Worldwide</p> -->
-  <!-- <div style="width: 50%;">
+<!-- ## Visitors
+<div style="margin: 1.5rem 0;">
+  <p style="font-size:0.8rem; color:#888; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Visitors Worldwide</p>
+  <div style="width: 50%;">
     <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=SjcMvFW80meUIpVMy5WL8Q0s97UzP-23tpp3vhsLaqk&cl=ffffff&w=a"></script>
-  </div> -->
-<!-- </div> -->
+  </div>
+</div> -->
