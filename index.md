@@ -46,6 +46,7 @@ We are proud to be part of the [Data Science and AI Institute](https://ai.jhu.ed
 # News
 
 <ul class="news-list">
+  <li><span class="news-date">Jul 2026</span> <span>The Alliance AI Lab is affiliated with <a href="https://iaseai.org/affiliates">the International Association for Safe & Ethical AI (IASEAI)</a>.</span></li>
   <li><span class="news-date">Mar 2026</span> The Alliance AI Lab website is launched!</li>
 </ul>
 
