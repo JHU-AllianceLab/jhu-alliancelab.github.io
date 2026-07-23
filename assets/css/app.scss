@@ -759,6 +759,7 @@ pre {
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 45, 114, .5));
   opacity: 0;
   transition: opacity .3s;
+  pointer-events: none;
 }
 
 .team-card:hover .card-image img {
@@ -782,6 +783,42 @@ pre {
 .team-card .card-content .subtitle {
   font-size: .77rem !important;
   color: var(--muted) !important;
+}
+
+.team-card-note {
+  font-family: 'Work Sans', sans-serif !important;
+  font-size: .77rem !important;
+  font-weight: 400 !important;
+  color: var(--muted) !important;
+}
+
+.team-icon-links {
+  display: flex;
+  gap: .9rem;
+  margin-top: .3rem;
+
+  a {
+    color: var(--jhu-blue-mid);
+    font-size: 1rem;
+    &:hover { color: var(--jhu-blue); }
+  }
+}
+
+.affiliation-card .card-image {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.affiliation-card .card-image img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.affiliation-card .card-image.logo-on-dark {
+  background: var(--jhu-blue, #002d72);
 }
 
 .team-section-title {

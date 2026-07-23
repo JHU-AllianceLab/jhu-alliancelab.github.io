@@ -14,7 +14,14 @@ show_sidebar: false
       <div class="card team-card">
         {% if product.image %}
         <div class="card-image">
+          {% if product.hover_images %}
+          {% capture hover_urls %}{% for hi in product.hover_images %}{{ hi | absolute_url }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}"
+            data-original-src="{{ product.image | absolute_url }}"
+            data-hover-images="{{ hover_urls | strip }}" />
+          {% else %}
           <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+          {% endif %}
         </div>
         {% endif %}
         <div class="card-content">
@@ -27,29 +34,19 @@ show_sidebar: false
   {% endfor %}
 </div>
 
-<h2 class="team-section-title">Current Collaborators</h2>
-<div class="columns is-multiline">
-  {% assign sorted_vis = site.team | where:"category","collaborator" %}
-  {% for product in sorted_vis %}
-  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
-    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
-      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
-      <div class="card team-card">
-        {% if product.image %}
-        <div class="card-image">
-          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
-        </div>
-        {% endif %}
-        <div class="card-content">
-          <p class="title is-6">{{ product.title }}</p>
-          <p class="subtitle is-6">{{ product.subtitle }}</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  {% endfor %}
-</div>
-
+<script>
+  document.querySelectorAll('img[data-hover-images]').forEach(function (img) {
+    var choices = img.dataset.hoverImages.split(',');
+    var original = img.dataset.originalSrc;
+    img.addEventListener('mouseenter', function () {
+      var pick = choices[Math.floor(Math.random() * choices.length)];
+      img.src = pick;
+    });
+    img.addEventListener('mouseleave', function () {
+      img.src = original;
+    });
+  });
+</script>
 
 <!-- <h2 class="team-section-title">Postdocs &amp; Research Scientists</h2>
 <div class="columns is-multiline">
@@ -77,9 +74,12 @@ show_sidebar: false
 
 <h2 class="team-section-title">PhD Students</h2>
 <div class="columns is-multiline">
-  {% assign sorted_phd = site.team | where:"category","phd_student" %}
+  {% assign phd_real = site.team | where:"category","phd_student" | where_exp:"item", "item.placeholder != true" | sort: "order" %}
+  {% assign phd_placeholders = site.team | where:"category","phd_student" | where:"placeholder", true %}
+  {% assign sorted_phd = phd_real | concat: phd_placeholders %}
   {% for product in sorted_phd %}
   <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    {% if product.placeholder %}
     <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
       <div class="card team-card">
         {% if product.image %}
@@ -93,6 +93,31 @@ show_sidebar: false
         </div>
       </div>
     </a>
+    {% else %}
+    <div class="card team-card">
+      {% if product.image %}
+      <div class="card-image">
+        {% if product.website %}
+        <a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="{{ product.title }} website">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </a>
+        {% else %}
+        <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        {% endif %}
+      </div>
+      {% endif %}
+      <div class="card-content">
+        <p class="title is-6">{{ product.title }}</p>
+        {% if product.note %}<p class="team-card-note">{{ product.note }}</p>{% endif %}
+        <div class="team-icon-links">
+          {% if product.website %}<a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>{% endif %}
+          {% if product.email %}<a href="mailto:{{ product.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a>{% endif %}
+          {% if product.linkedin %}<a href="{{ product.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
+          {% if product.scholar %}<a href="{{ product.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
@@ -128,6 +153,52 @@ show_sidebar: false
       <div class="card team-card">
         {% if product.image %}
         <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<h2 class="team-section-title">Current Collaborators</h2>
+<div class="columns is-multiline">
+  {% assign sorted_vis = site.team | where:"category","collaborator" %}
+  {% for product in sorted_vis %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
+      <div class="card team-card">
+        {% if product.image %}
+        <div class="card-image">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </div>
+        {% endif %}
+        <div class="card-content">
+          <p class="title is-6">{{ product.title }}</p>
+          <p class="subtitle is-6">{{ product.subtitle }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+
+<h2 class="team-section-title">Affiliated Institutes</h2>
+<div class="columns is-multiline">
+  {% assign sorted_aff = site.team | where:"category","affiliation" | sort: "order" %}
+  {% for product in sorted_aff %}
+  <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
+      <div class="card team-card affiliation-card">
+        {% if product.image %}
+        <div class="card-image{% if product.logo_on_dark %} logo-on-dark{% endif %}">
           <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
         </div>
         {% endif %}
