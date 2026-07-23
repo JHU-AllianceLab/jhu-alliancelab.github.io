@@ -5,6 +5,7 @@ job_title: Assistant Professor
 category: pi
 layout: team_member_personal_page
 image: img/members/haimin.JPG
+image_scale: 70
 hover_images:
   - img/members/haimin-1.JPG
   - img/members/haimin-2.JPG

@@ -5,8 +5,15 @@ layout: team_member_base
 <div class="columns is-multiline team-member-profile">
 
     <div class="column is-6">
-        <figure class="image is-3by3 mb-6">
-            <img class="rounded-rect" src="{{ page.image | absolute_url}}" />
+        <figure class="image is-3by3 mb-6"{% if page.image_scale %} style="width: {{ page.image_scale }}%;"{% endif %}>
+            {% if page.hover_images %}
+            {% capture hover_urls %}{% for hi in page.hover_images %}{{ hi | absolute_url }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+            <img class="rounded-rect" src="{{ page.image | absolute_url }}"
+                data-original-src="{{ page.image | absolute_url }}"
+                data-hover-images="{{ hover_urls | strip }}" />
+            {% else %}
+            <img class="rounded-rect" src="{{ page.image | absolute_url }}" />
+            {% endif %}
         </figure>
 
         <div class="columns is-multiline">
@@ -32,3 +39,5 @@ layout: team_member_base
     </div>
 
 </div>
+
+{% if page.hover_images %}{% include hover-image-swap.html %}{% endif %}

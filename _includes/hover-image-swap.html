@@ -1,0 +1,13 @@
+<script>
+  document.querySelectorAll('img[data-hover-images]').forEach(function (img) {
+    var choices = img.dataset.hoverImages.split(',');
+    var original = img.dataset.originalSrc;
+    img.addEventListener('mouseenter', function () {
+      var pick = choices[Math.floor(Math.random() * choices.length)];
+      img.src = pick;
+    });
+    img.addEventListener('mouseleave', function () {
+      img.src = original;
+    });
+  });
+</script>
