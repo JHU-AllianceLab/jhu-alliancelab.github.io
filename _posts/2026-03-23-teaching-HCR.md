@@ -115,7 +115,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>1</td>
   <td>Sep 2</td>
   <td>2</td>
-  <td>Foundations: Dynamical systems, probability, Bayesian inference, optimal control</td>
+  <td>Elements of Robotic Decision-Making: Dynamical systems, probability, Bayesian inference, optimal control</td>
   <td><span class="tag is-success is-light">Lecture</span></td>
   <td><strong>Required Reading:</strong> <a href="http://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Boxonmaths.pdf" target="_blank">All models are wrong. George Box (1976)</a></td>
 </tr>
@@ -161,12 +161,12 @@ After this class, you will be familiar with the state of the art and open challe
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span><br>
-    <span class="tag is-info is-light">HW release</span><br>
-    <span class="tag is-primary is-light">Code demo</span>
+    <span class="tag is-info is-light">HW release</span>
+    <!-- <br><span class="tag is-primary is-light">Code demo</span> -->
   </td>
   <td>
     <strong>Debate Proposition:</strong> Pre-specifying an ODD for robots is a suitable way to characterize and enforce its safe operation around people.<br>
-    <strong>Code Demo:</strong> Safety Filters<br>
+    <!-- <strong>Code Demo:</strong> Safety Filters<br> -->
     <strong>Optional Reading 1:</strong> <a href="https://arxiv.org/abs/2011.02082" target="_blank">DeepReach: A Deep Learning Approach to High-Dimensional Reachability. Bansal and Tomlin (2020)</a><br>
     <strong>Optional Reading 2:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/9303785" target="_blank">Learning Control Barrier Functions from Expert Demonstrations. Robey et al. (2020)</a><br>
     <strong>Homework 1:</strong> Trajectory optimization, MDP/RL, robot safety
@@ -197,11 +197,11 @@ After this class, you will be familiar with the state of the art and open challe
   <td>7</td>
   <td>Introduction to dynamic game theory</td>
   <td>
-    <span class="tag is-success is-light">Lecture</span><br>
-    <span class="tag is-primary is-light">Code demo</span>
+    <span class="tag is-success is-light">Lecture</span>
+    <!-- <br><span class="tag is-primary is-light">Code demo</span> -->
   </td>
   <td>
-    <strong>Code Demo:</strong> ILQGames, KLGames<br>
+    <!-- <strong>Code Demo:</strong> ILQGames, KLGames<br> -->
     <strong>Required Reading:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/9197129" target="_blank">Efficient Iterative Linear-Quadratic Approximations for Nonlinear Multi-Player General-Sum Differential Games. Fridovich-Keil et al. (2020)</a><br>
     <strong>Optional Reading 1:</strong> <a href="https://epubs.siam.org/doi/book/10.1137/1.9781611971132" target="_blank">Dynamic Noncooperative Game Theory. Başar and Olsder (1998)</a><br>
     <strong>Optional Reading 2:</strong> <a href="https://clearoboticslab.github.io/books/" target="_blank">Smooth Game Theory. Fridovich-Keil et al. (2024)</a><br>
