@@ -35,7 +35,7 @@ hero_scrim: true
 
 In this course, we will study fundamental concepts in human-centered robotics, with an emphasis on mathematical models of human–robot interaction and decision-making algorithms for safely deploying robots in human-populated environments. We will ground these ideas in applications such as autonomous vehicles, aerial robots, and home robots.
 
-We will start by introducing the main technical tools for robot planning and control in interactive, safety-critical settings through a game-theoretic lens. After that, we will turn our attention to two tightly coupled challenges: enabling robots to safely learn from humans and help humans learn. The course will combine seminar-style discussions of research papers and whiteboard-style lecture to introduce the key theoretical concepts, and the class project will give you an opportunity to explore the approaches covered in class and possibly combine them with your own research.
+We will start by introducing the main technical tools for robot planning and control in interactive, safety-critical settings through a game-theoretic lens. After that, we will turn our attention to human-centered robot learning and try to answer two tightly coupled questions: how can robots learn to safely work with humans and help humans learn. The course will combine seminar-style discussions of research papers and whiteboard-style lecture to introduce the key theoretical concepts, and the class project will give you an opportunity to explore the approaches covered in class and possibly combine them with your own research.
 
 After this class, you will be familiar with the state of the art and open challenges in safe and performant human–robot interaction, and you will understand the guarantees and tradeoffs offered by different algorithmic frameworks for human-centered robotics.
 
@@ -81,7 +81,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 
 
-## Tentative Syllabus
+## Syllabus
 
 <div class="table-container">
 <table class="table is-fullwidth is-striped is-hoverable" style="font-size:0.85rem;">
@@ -108,7 +108,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>1</td>
   <td>Human-centered robotics 101</td>
   <td><span class="tag is-success is-light">Lecture</span></td>
-  <td><strong>Recommended Movie:</strong> <a href="https://www.nytimes.com/video/NYT-Presents/100000008464087/the-new-york-times-presents-elon-musks-crash-course.html" target="_blank">Elon Musk's Crash Course</a></td>
+  <td>
+  <!-- <strong>Recommended Movie:</strong> <a href="https://www.nytimes.com/video/NYT-Presents/100000008464087/the-new-york-times-presents-elon-musks-crash-course.html" target="_blank">Elon Musk's Crash Course</a> -->
+  </td>
 </tr>
 
 <tr>
@@ -299,7 +301,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 <!-- ── Module III ── -->
 <tr class="has-background-success-light">
-  <td colspan="6"><strong>Module III: Robots that Learn from Humans</strong></td>
+  <td colspan="6"><strong>Module III: Robots that Learn to Safely Work with Humans</strong></td>
 </tr>
 
 <tr>
