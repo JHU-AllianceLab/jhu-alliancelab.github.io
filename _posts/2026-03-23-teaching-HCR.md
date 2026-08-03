@@ -27,7 +27,7 @@ hero_scrim: true
 
 **Level:** Graduate & Undergraduate
 
-**Prerequisites:** EN.601.220, 601.226, linear algebra, calculus, probability.
+**Prerequisites:** Linear algebra, calculus, probability, and basic programming (e.g., EN.601.220, 601.226).
 
 
 
@@ -65,7 +65,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 ## Learning Objectives
 
-- You will learn to **formulate human–robot interaction problems** using tools from game theory, machine learning, dynamical systems, and cognitive science.
+- You will learn to **formulate and solve physical human–robot interaction problems** using a set of interdisciplinary tools from game theory, machine learning, dynamical systems, and cognitive science.
 
 - You will explore how different mathematical models can help **inform robot decision-making** in safety-critical, human-interactive settings.
 
@@ -514,3 +514,14 @@ After this class, you will be familiar with the state of the art and open challe
 </tbody>
 </table>
 </div>
+
+
+## Acknowledgement
+
+This course is inspired by and partially builds on the following courses:
+
+- Safety-Critical Robotics and AI (taught by Jaime Fernández Fisac), Princeton.
+- Interactive Robotics (taught by Andrea Bajcsy), CMU.
+- Physical Intelligence (taught by Antonio Loquercio), Penn.
+- Model Predictive Control (taught by Manfred Morari), Penn.
+
