@@ -49,6 +49,7 @@
     var W, H, particles = [];
     var isHome = canvas.classList.contains('hero-canvas--home');
     var N = isHome ? 150 : 100;
+    if (window.innerWidth <= 1023) N = Math.round(N / 3);
     var MAX_D = isHome ? 150 : 150;
 
     function resize() {

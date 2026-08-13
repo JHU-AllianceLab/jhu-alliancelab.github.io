@@ -25,6 +25,8 @@ hero_scrim: true
 
 **Instructor:** [Prof. Haimin Hu](https://www.cs.jhu.edu/faculty/haimin-hu/)
 
+**Time:** MW 3-4:15 PM
+
 **Level:** Graduate & Undergraduate
 
 **Prerequisites:** Linear algebra, calculus, probability, and basic programming (e.g., EN.601.220, 601.226).
@@ -59,7 +61,11 @@ After this class, you will be familiar with the state of the art and open challe
 *(There is no required textbook)*
 
 - Dimitri Bertsekas, *Reinforcement Learning and Optimal Control*.
-- Tamer Basar, Geert Jan Olsder, *Dynamic Noncooperative Game Theory*, 2nd Edition.
+- Tamer Başar, Geert Jan Olsder, *Dynamic Noncooperative Game Theory*, 2nd Edition.
+- David Fridovich-Keil, <a href="https://clearoboticslab.github.io/documents/smooth_game_theory.pdf" target="_blank">*Smooth Game Theory*</a>.
+- Somil Bansal, Jaime Fernández Fisac, *Safe Neurosymbolic Learning and Control*.
+- Christopher Bishop, *Pattern Recognition and Machine Learning*.
+- Andrea Thomaz, Guy Hoffman, Maya Cakmak, <a href="https://hrc2.io/assets/pdfs/papers/ThomazHoffmanCakmak16.pdf" target="_blank">*Computational Human-Robot Interaction*</a>.
 
 
 
@@ -109,6 +115,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Human-centered robotics 101</td>
   <td><span class="tag is-success is-light">Lecture</span></td>
   <td>
+  <strong>Recommended Podcast:</strong> <a href="https://magazine.caltech.edu/post/aaron-ames-wired-robotics-video" target="_blank">Robots Can Never Be Trusted?</a>
   <!-- <strong>Recommended Movie:</strong> <a href="https://www.nytimes.com/video/NYT-Presents/100000008464087/the-new-york-times-presents-elon-musks-crash-course.html" target="_blank">Elon Musk's Crash Course</a> -->
   </td>
 </tr>
@@ -244,15 +251,16 @@ After this class, you will be familiar with the state of the art and open challe
   <td>6</td>
   <td>Oct 5</td>
   <td>10</td>
-  <td>Language-enabled HRI</td>
+  <td><a href="https://allenzren.github.io/" target="_blank">Allen Z. Ren</a> (Physical Intelligence): Learning Generalist Robot Policies</td>
   <td>
-    <span class="tag is-light">Paper discussion</span><br>
+    <span class="tag is-success">Guest Lecture</span><br>
     <span class="tag is-warning">Project proposal due</span>
   </td>
   <td>
-    <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2111.03205" target="_blank">LILA: Language-Informed Latent Actions. Karamcheti et al. (2021)</a><br>
-    <strong>Paper 2:</strong> <a href="https://arxiv.org/abs/2307.01928" target="_blank">Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners. Ren et al. (2023)</a><br>
-    <strong>Paper 3:</strong> <a href="https://arxiv.org/abs/2403.15959" target="_blank">Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction. Lidard et al. (2024)</a>
+    <!-- <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2111.03205" target="_blank">LILA: Language-Informed Latent Actions. Karamcheti et al. (2021)</a><br> -->
+    <strong>Required Reading:</strong>
+    <a href="https://arxiv.org/abs/2307.01928" target="_blank">Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners. Ren et al. (2023)</a><br>
+    <!-- <strong>Paper 3:</strong> <a href="https://arxiv.org/abs/2403.15959" target="_blank">Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction. Lidard et al. (2024)</a> -->
   </td>
 </tr>
 
@@ -379,9 +387,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>10</td>
   <td>Nov 4</td>
   <td>19</td>
-  <td>RLHF, Human–AI safety<br><em>(Guest lecture: Kaiqu Liang)</em></td>
+  <td><a href="https://kaiquliang.github.io/" target="_blank">Kaiqu Liang</a> (Princeton/Anthropic): RLHF, Human–AI safety</td>
   <td>
-    <span class="tag is-success is-light">Lecture</span><br>
+    <span class="tag is-success">Guest Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span>
   </td>
   <td>

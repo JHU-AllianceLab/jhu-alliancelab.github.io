@@ -10,15 +10,16 @@ show_sidebar: false
   {% assign sorted_pi = site.team | where:"category","pi" %}
   {% for product in sorted_pi %}
   <div class="column is-3-desktop is-6-tablet reveal delay-1">
-    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
       <div class="card team-card">
         {% if product.image %}
         <div class="card-image">
           {% if product.hover_images %}
-          {% capture hover_urls %}{% for hi in product.hover_images %}{{ hi | absolute_url }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+          {% capture hover_urls %}{% for hi in product.hover_images %}{{ hi | absolute_url }}{% unless forloop.last
+          %},{% endunless %}{% endfor %}{% endcapture %}
           <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}"
-            data-original-src="{{ product.image | absolute_url }}"
-            data-hover-images="{{ hover_urls | strip }}" />
+            data-original-src="{{ product.image | absolute_url }}" data-hover-images="{{ hover_urls | strip }}" />
           {% else %}
           <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
           {% endif %}
@@ -62,13 +63,15 @@ show_sidebar: false
 
 <h2 class="team-section-title">PhD Students</h2>
 <div class="columns is-multiline">
-  {% assign phd_real = site.team | where:"category","phd_student" | where_exp:"item", "item.placeholder != true" | sort: "order" %}
+  {% assign phd_real = site.team | where:"category","phd_student" | where_exp:"item", "item.placeholder != true" | sort:
+  "order" %}
   {% assign phd_placeholders = site.team | where:"category","phd_student" | where:"placeholder", true %}
   {% assign sorted_phd = phd_real | concat: phd_placeholders %}
   {% for product in sorted_phd %}
   <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
     {% if product.placeholder %}
-    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
       <div class="card team-card">
         {% if product.image %}
         <div class="card-image">
@@ -98,10 +101,14 @@ show_sidebar: false
         <p class="title is-6">{{ product.title }}</p>
         {% if product.note %}<p class="team-card-note">{{ product.note }}</p>{% endif %}
         <div class="team-icon-links">
-          {% if product.website %}<a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>{% endif %}
-          {% if product.email %}<a href="mailto:{{ product.email }}" aria-label="Email"><i class="fas fa-envelope"></i></a>{% endif %}
-          {% if product.linkedin %}<a href="{{ product.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
-          {% if product.scholar %}<a href="{{ product.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+          {% if product.website %}<a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="Website"><i
+              class="fas fa-globe"></i></a>{% endif %}
+          {% if product.email %}<a href="mailto:{{ product.email }}" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>{% endif %}
+          {% if product.linkedin %}<a href="{{ product.linkedin }}" target="_blank" rel="noopener"
+            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
+          {% if product.scholar %}<a href="{{ product.scholar }}" target="_blank" rel="noopener"
+            aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
         </div>
       </div>
     </div>
@@ -115,7 +122,8 @@ show_sidebar: false
   {% assign sorted_ms = site.team | where:"category","master_student" %}
   {% for product in sorted_ms %}
   <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
-    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
       <div class="card team-card">
         {% if product.image %}
         <div class="card-image">
@@ -137,7 +145,8 @@ show_sidebar: false
   {% assign sorted_ug = site.team | where:"category","undergraduate" %}
   {% for product in sorted_ug %}
   <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
-    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}" {% if product.external_link %}target="_blank" rel="noopener"{% endif %}>
+    <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
+      {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
       <div class="card team-card">
         {% if product.image %}
         <div class="card-image">
@@ -177,7 +186,7 @@ show_sidebar: false
   {% endfor %}
 </div>
 
-<h2 class="team-section-title">Affiliated Institutes</h2>
+<h2 class="team-section-title">Affiliated Organizations</h2>
 <div class="columns is-multiline">
   {% assign sorted_aff = site.team | where:"category","affiliation" | sort: "order" %}
   {% for product in sorted_aff %}

@@ -253,6 +253,20 @@ pre {
   font-weight: 700;
 }
 
+// The mobile burger menu renders on a dark navy background, unlike the
+// white desktop bar — the gray/navy text colors above are unreadable there.
+@media (max-width: 1023px) {
+  .navbar.is-primary .navbar-item,
+  .navbar.is-primary .navbar-link {
+    color: #fff !important;
+  }
+
+  .navbar.is-primary .navbar-item.is-active,
+  .navbar.is-primary .navbar-link.is-active {
+    color: var(--jhu-gold) !important;
+  }
+}
+
 .navbar.is-primary .navbar-burger span {
   background: var(--jhu-blue);
 }

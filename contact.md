@@ -31,6 +31,7 @@ Department of Computer Science <br>
 Johns Hopkins University <br>
 3400 N. Charles St., Baltimore, MD 21218
 
+<img src="{{ site.baseurl }}/img/contact/Malone-Hall.jpg" alt="Malone Hall" style="width: 37.5%; border-radius: 8px; margin: 10px 0; display: block;">
 
 <!-- Google Maps Embed -->
 <div style="position: relative; width: 75%; padding-bottom: 26.25%; margin: 10px 0;">
