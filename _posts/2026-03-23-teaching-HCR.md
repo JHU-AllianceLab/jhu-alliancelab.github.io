@@ -447,7 +447,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td><span class="tag is-light">Paper discussion</span></td>
   <td>
     <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2503.07885" target="_blank">Safety Guardrails for LLM-Enabled Robots. Ravichandran et al. (2025)</a><br>
-    <strong>Paper 2:</strong> <a href="https://arxiv.org/pdf/2407.08735" target="_blank">Real-Time Anomaly Detection and Reactive Planning with Large Language Models. Sinha et al. (2024)</a>
+    <strong>Paper 2:</strong> <a href="https://arxiv.org/pdf/2407.08735" target="_blank">Real-Time Anomaly Detection and Reactive Planning with Large Language Models. Sinha et al. (2024)</a><br>
     <!-- <strong>Paper 2:</strong> <a href="https://arxiv.org/abs/2402.17747" target="_blank">When Your AIs Deceive You: Challenges of Partial Observability in Reinforcement Learning from Human Feedback. Lang et al. (2024)</a><br> -->
     <strong>Paper 3:</strong> <a href="https://arxiv.org/abs/2307.01928" target="_blank">Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners. Ren et al. (2023)</a>
   </td>
