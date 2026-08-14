@@ -317,7 +317,8 @@ After this class, you will be familiar with the state of the art and open challe
   <td>
     <strong>Debate Proposition:</strong> A robot that fails less often than humans performing the same type of task should be considered safe enough for deployment.<br>
     <strong>Required Reading 1:</strong> <a href="https://proceedings.neurips.cc/paper_files/paper/2016/hash/c3395dd46c34fa7fd8d729d8cf88b7a8-Abstract.html" target="_blank">Cooperative Inverse Reinforcement Learning. Hadfield-Menell et al. (2016)</a><br>
-    <strong>Required Reading 2:</strong> <a href="https://arxiv.org/abs/1707.06354" target="_blank">Pragmatic-Pedagogic Value Alignment. Fisac et al. (2017)</a>
+    <strong>Required Reading 2:</strong> <a href="https://arxiv.org/abs/1707.06354" target="_blank">Pragmatic-Pedagogic Value Alignment. Fisac et al. (2017)</a><br>
+    <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2504.07091" target="_blank">AssistanceZero: Scalably Solving Assistance Games. Laidlaw et al. (2025)</a>
   </td>
 </tr>
 
