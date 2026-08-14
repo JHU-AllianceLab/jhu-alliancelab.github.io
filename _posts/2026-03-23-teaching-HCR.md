@@ -467,7 +467,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span><br>
-    <span class="tag is-info">HW due</span>
+    <!-- <span class="tag is-info">HW due</span> -->
   </td>
   <td>
     <strong>Debate Proposition:</strong> With enough data we can solve safety and alignment in human-centered robotics.<br>
