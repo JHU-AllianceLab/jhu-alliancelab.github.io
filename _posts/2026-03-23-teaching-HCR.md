@@ -83,7 +83,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 - Through a **5-minute lightning talk**, modeled after common practices at major robotics conferences, you will learn to communicate technical insights concisely and prepare for future conference engagement.
 
-- Through a semester-long project, you will learn the **full pipeline of conducting research** in human-centered robotics, including dissecting research papers, identifying limitations in existing approaches, formulating problems with suitable models, developing algorithmic solutions, and deploying and verifying them on hardware platforms. The [Alliance AI Lab](https://alliance-ai.cs.jhu.edu/) is committed to providing ongoing mentorship and equipment support for students wishing to advance their projects toward publication.
+- Through a semester-long project, you will learn the **full pipeline of conducting robotics research**, including dissecting research papers, identifying limitations in existing approaches, formulating problems with suitable models, developing algorithmic solutions, and deploying and verifying them on hardware platforms with real human participants. The [Alliance AI Lab](https://alliance-ai.cs.jhu.edu/) is committed to providing ongoing mentorship and equipment support for students wishing to advance their projects toward publication.
 
 
 
