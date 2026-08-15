@@ -186,7 +186,7 @@ After this class, you will be familiar with the state of the art and open challe
     <!-- <br><span class="tag is-primary is-light">Code demo</span> -->
   </td>
   <td>
-    <strong>Debate Proposition:</strong> We can never enforce absolute (i.e, 100%) safety for human-robot interactions.<br>
+    <strong>Debate Proposition:</strong> We can never enforce absolute (i.e, 100%) safety for robots.<br>
     <!-- <strong>Code Demo:</strong> Safety Filters<br> -->
     <strong>Required Reading:</strong> <a href="https://arxiv.org/pdf/1903.11199" target="_blank">Control Barrier Functions: Theory and Applications. Ames et al. (2019)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/pdf/1905.10691" target="_blank">Safe Reinforcement Learning with Nonlinear Dynamics via Model Predictive Shielding. Bastani (2020)</a><br>
