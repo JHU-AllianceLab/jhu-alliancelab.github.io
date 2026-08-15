@@ -20,5 +20,8 @@
 # - name: Software
 #   link: https://github.com/JHU-AllianceLab
   new_tab: true
+- name: Onboarding
+  link: https://jhu-cs-phd-onboarding.github.io/
+  new_tab: true
 - name: Contact
   link: /contact/
