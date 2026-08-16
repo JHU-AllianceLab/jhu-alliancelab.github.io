@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css?v={{ site.time | date: '%s' }}">
     <link rel="shortcut icon" type="image/png"
           {% if site.favicon %} href="{{ site.favicon | relative_url }}" {% else %} href="{{ site.baseurl }}/favicon.png" {% endif %}
     />
