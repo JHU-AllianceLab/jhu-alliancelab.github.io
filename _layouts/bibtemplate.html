@@ -1,69 +1,45 @@
 ---
 ---
-<div class="text-justify">
-    {{reference}}
-<div style="margin-top:.25rem"><button class="button0" onclick="toggle{{entry.key  | replace: '-':'' | replace: ':':''}}()">bibtex</button>
-
-<script>
-    function toggle{{entry.key | replace : '-':'' | replace : ':':''}}() {
-        var x= document.getElementById('a{{entry.key}}');
-        // console.log("haha %o",typeof {{entry.key}});
-        if (x.style.display === 'block') {
-            x.style.display = 'none';
-        } else {
-            x.style.display = 'block';
-        }
-    }
-</script>
-
-
-<button class="button3"  onclick="toggle3{{entry.key  | replace: '-':'' | replace: ':':''}}()">plain text</button>
-
-<script>
-    function toggle3{{entry.key | replace : '-':'' | replace : ':':''}}() {
-        var x= document.getElementById('c{{entry.key}}');
-        // console.log("haha %o",typeof {{entry.key}});
-        if (x.style.display === 'block') {
-            x.style.display = 'none';
-        } else {
-            x.style.display = 'block';
-        }
-    }
-</script>
-
-{% if entry.abstract %}
-<button class="button3" onclick="toggle2{{entry.key  | replace: '-':'' | replace: ':':''}}()">abstract</button>
-{% endif %}
-
-<script>
-    function toggle2{{entry.key | replace : '-':'' | replace : ':':''}}() {
-        var x= document.getElementById('b{{entry.key}}');
-        // console.log("haha %o",typeof {{entry.key}});
-        if (x.style.display === 'block') {
-            x.style.display = 'none';
-        } else {
-            x.style.display = 'block';
-        }
-    }
-    </script>
-
-{% if entry.doi %}
-<a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input type='button' class='button1' value='doi'/></a>
-{% endif %}
-{% if entry.preprint %}
-<a href="{{ entry.preprint }}"><input type='button' class='button2' value='preprint'/></a>
-{% endif %}
-{% if entry.url %}
-<a href='{{ entry.url | escape }}'><input type='button' class='button4' value='link'/></a>
-{% endif %}
-{% if entry.video %}
-<a href="{{ entry.video}}"><input type='button' class='button5' value='video'/></a>
-{% endif %}
-<!-- {% if entry.code %} -->
-<!-- <a href="{{ entry.code }}"><input type='button' class='button3' value='code'/></a> -->
-<!-- {% endif %} -->
-</div></div>
-
-<div id="a{{entry.key}}" style="display:none"><pre>{{entry.bibtex}}</pre></div>
-<div id="b{{entry.key}}" style="display:none"><pre>{{entry.abstract}}</pre></div>
-<div id="c{{entry.key}}" style="display:none"><pre>{{entry.author}}, "{{{entry.title}}," {{entry.journal}} {{entry.booktitle}}, {{entry.year}}.</pre></div>
+<div class="pub-entry">
+  {% comment %}
+  <div class="pub-image">
+    <img src="{{ entry.image | default: '/img/alliance-logo.png' | relative_url }}" alt="" loading="lazy">
+  </div>
+  {% endcomment %}
+  <div class="pub-body">
+  <p class="pub-title">{{ entry.title }}</p>
+  {%- assign author_list = entry.author | strip_newlines | strip | split: " and " -%}
+  <p class="pub-authors">
+    {%- for a in author_list -%}
+      {%- if a == "others" -%}et al.{%- else -%}
+        {%- assign name_parts = a | split: ", " -%}
+        {%- if name_parts.size == 2 -%}{%- assign full_name = name_parts[1] | append: " " | append: name_parts[0] -%}{%- else -%}{%- assign full_name = a -%}{%- endif -%}
+        {{ full_name }}{%- if entry.equal contains full_name -%}*{%- endif -%}{%- if entry.dagger contains full_name -%}&dagger;{%- endif -%}
+      {%- endif -%}
+      {%- unless forloop.last -%}
+        {%- assign next_a = author_list[forloop.index] -%}
+        {%- if next_a == "others" %}{% if forloop.index == 1 %} {% else %}, {% endif %}{% elsif forloop.rindex0 == 1 %}{% if author_list.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  </p>
+  {%- assign arxiv_id = entry.paper | split: "/" | last | remove: ".pdf" -%}
+  {%- capture venue -%}
+    {%- if entry.booktitle -%}{{ entry.booktitle }}{%- elsif entry.journal -%}{{ entry.journal }}{%- elsif entry.school -%}{{ entry.school }} (Dissertation){%- elsif entry.paper contains "arxiv.org" -%}arXiv:{{ arxiv_id }}{%- endif -%}
+    {%- if entry.volume %}, vol. {{ entry.volume }}{% endif -%}
+    {%- if entry.number %}, no. {{ entry.number }}{% endif -%}
+  {%- endcapture -%}
+  {%- assign venue = venue | strip -%}
+  <p class="pub-venue">{% if venue != "" %}{{ venue }}, {% endif %}{{ entry.year }}</p>
+  {% if entry.award %}
+  <p class="pub-award"><i class="fas fa-award"></i> {{ entry.award }}</p>
+  {% endif %}
+  <div class="pub-links">
+    {% if entry.paper %}<a class="pub-tag" href="{{ entry.paper }}" target="_blank" rel="noopener">Paper</a>{% endif %}
+    {% if entry.code %}<a class="pub-tag" href="{{ entry.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+    {% if entry.video %}<a class="pub-tag" href="{{ entry.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+    {% if entry.homepage %}<a class="pub-tag" href="{{ entry.homepage }}" target="_blank" rel="noopener">Homepage</a>{% endif %}
+    {% if entry.poster %}<a class="pub-tag" href="{{ entry.poster }}" target="_blank" rel="noopener">Poster</a>{% endif %}
+    {% if entry.slides %}<a class="pub-tag" href="{{ entry.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+  </div>
+  </div>
+</div>

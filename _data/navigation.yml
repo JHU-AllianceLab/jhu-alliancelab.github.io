@@ -8,9 +8,8 @@
 - name: Research
   link: /research/
 - name: Publications
-  # link: /publications/
-  link: https://scholar.google.com/citations?user=_UYmNdEAAAAJ
-  new_tab: true
+  link: /publications/
+  # link: https://scholar.google.com/citations?user=_UYmNdEAAAAJ
 # - name: News
   # link: /news/
 - name: Courses

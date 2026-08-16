@@ -32,5 +32,7 @@ plugins:
 
 scholar:
   style: simple-ieee.csl
-  bibliography_list_tag: "ul.no-bullet"
+  bibliography_list_tag: "ul"
+  bibliography_list_attributes:
+    class: "bibliography no-bullet"
   bibliography_template: bibtemplate
