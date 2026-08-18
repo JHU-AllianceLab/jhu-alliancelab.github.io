@@ -408,7 +408,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>10</td>
   <td>Nov 2</td>
   <td>18</td>
-  <td>Midterm "mini-conference": 5-min lightning talks + 2-min Q&amp;A</td>
+  <td>Midterm "mini-conference": 2-min lightning talks</td>
   <td><span class="tag is-danger is-light">Lightning talks</span></td>
   <td></td>
 </tr>
