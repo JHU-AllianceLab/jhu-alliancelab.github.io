@@ -186,7 +186,7 @@ After this class, you will be familiar with the state of the art and open challe
     <!-- <br><span class="tag is-primary is-light">Code demo</span> -->
   </td>
   <td>
-    <strong>Debate Proposition:</strong> We can never enforce absolute (i.e, 100%) safety for robots.<br>
+    <strong>Debate Proposition:</strong> A robot that fails less often than humans performing the same type of task should be considered safe enough for deployment.<br>
     <!-- <strong>Code Demo:</strong> Safety Filters<br> -->
     <strong>Required Reading:</strong> <a href="https://arxiv.org/pdf/1903.11199" target="_blank">Control Barrier Functions: Theory and Applications. Ames et al. (2019)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/pdf/1905.10691" target="_blank">Safe Reinforcement Learning with Nonlinear Dynamics via Model Predictive Shielding. Bastani (2020)</a><br>
@@ -262,8 +262,12 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Oct 7</td>
   <td>11</td>
   <td>Human-robot interaction as a dynamic game</td>
-  <td><span class="tag is-success is-light">Lecture</span></td>
   <td>
+    <span class="tag is-success is-light">Lecture</span><br>
+    <span class="tag is-warning is-light">Debate</span>
+  </td>
+  <td>
+    <strong>Debate Proposition:</strong> Learning-based methods (e.g., RL) are more useful than optimization-based control (e.g., MPC) for deploying robots around people.<br>
     <strong>Required Reading:</strong> <a href="https://web.archive.org/web/20220218155452id_/http://www.roboticsproceedings.org/rss12/p29.pdf" target="_blank">Planning for Autonomous Cars that Leverage Effects on Human Actions. Sadigh et al. (2018)</a><br>
     <!-- <strong>Optional Reading 1:</strong> <a href="https://psycnet.apa.org/record/1960-03588-000" target="_blank">Individual Choice Behavior. Luce (1959)</a><br> -->
     <strong>Optional Reading 1:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4137788/" target="_blank">Understanding the Intentions of Others: Re-Enactment of Intended Acts by 18-Month-Old Children. Meltzoff (1995)</a><br>
@@ -315,7 +319,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span></td>
   <td>
-    <strong>Debate Proposition:</strong> A robot that fails less often than humans performing the same type of task should be considered safe enough for deployment.<br>
+    <strong>Debate Proposition:</strong> We can never enforce absolute (i.e, 100%) safety for human-robot interaction.<br>
     <strong>Required Reading 1:</strong> <a href="https://proceedings.neurips.cc/paper_files/paper/2016/hash/c3395dd46c34fa7fd8d729d8cf88b7a8-Abstract.html" target="_blank">Cooperative Inverse Reinforcement Learning. Hadfield-Menell et al. (2016)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://arxiv.org/abs/1707.06354" target="_blank">Pragmatic-Pedagogic Value Alignment. Fisac et al. (2017)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2504.07091" target="_blank">AssistanceZero: Scalably Solving Assistance Games. Laidlaw et al. (2025)</a>
@@ -433,7 +437,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-info is-light">HW release</span>
   </td>
   <td>
-    <strong>Debate Proposition:</strong> Learning-based methods (e.g., RL) are more useful than optimization-based control (e.g., MPC) for deploying robots around people.<br>
+    <strong>Debate Proposition:</strong> Safe (reinforcement) learning is fundamentally Mission Impossible for robots in real-world deployment.<br>
     <strong>Required Reading:</strong> <a href="https://ai.stanford.edu/~amaas/papers/amaas_aaai.pdf" target="_blank">Maximum Entropy Inverse Reinforcement Learning. Ziebart et al. (2008)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2106.03611" target="_blank">Inferring Objectives in Continuous Dynamic Games from Noise-Corrupted Partial State Observations. Peters et al. (2021)</a><br>
     <strong>Homework 3:</strong> Safe RL, inverse games
@@ -445,7 +449,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Nov 9</td>
   <td>20</td>
   <td>Robot safety in the LLM era</td>
-  <td><span class="tag is-light">Paper discussion</span></td>
+  <td><span class="tag is-light">Paper discussion</span><br>
+  <span class="tag is-warning">Midterm report due</span>
+  </td>
   <td>
     <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2503.07885" target="_blank">Safety Guardrails for LLM-Enabled Robots. Ravichandran et al. (2025)</a><br>
     <strong>Paper 2:</strong> <a href="https://arxiv.org/pdf/2407.08735" target="_blank">Real-Time Anomaly Detection and Reactive Planning with Large Language Models. Sinha et al. (2024)</a><br>
@@ -470,7 +476,7 @@ After this class, you will be familiar with the state of the art and open challe
     <!-- <span class="tag is-info">HW due</span> -->
   </td>
   <td>
-    <strong>Debate Proposition:</strong> With enough data we can solve safety and alignment in human-centered robotics.<br>
+    <strong>Debate Proposition:</strong> Zero-sum games are a useful abstraction of safe robot operation in uncertain environments.<br>
     <strong>Required Reading 1:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/6483603" target="_blank">Legibility and Predictability of Robot Motion. Dragan et al. (2013)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://www.science.org/doi/10.1126/scirobotics.aea7897" target="_blank">“Data Will Solve Robotics and Automation: True or false?”: A Debate. Amato et al. (2025)</a>
   </td>
@@ -486,7 +492,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-warning is-light">Debate</span>
   </td>
   <td>
-    <strong>Debate Proposition:</strong> Explicit representations of human skill level and productive failures are essential for a robot to effectively teach humans.<br>
+    <strong>Debate Proposition:</strong> Explicit representations of human skill level and productive failures are both essential for a robot coach to effectively teach humans.<br>
     <strong>Required Reading:</strong> <a href="https://arxiv.org/pdf/2606.25337" target="_blank">AI Coaching for Accelerating Human Skill Development with Reinforcement Learning. Wang et al. (2026)</a><br>
     <strong>Optional Reading 1:</strong> <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010416-044022" target="_blank">Learning from Errors. Metcalfe (2017)</a><br>
     <strong>Optional Reading 2:</strong> <a href="https://academics.hamilton.edu/documents/themundanityofexcellence.pdf" target="_blank">The Mundanity of Excellence. Chambliss (1989)</a>
@@ -552,7 +558,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-warning is-light">Debate</span>
   </td>
   <td>
-    <strong>Debate Proposition:</strong> TBD
+    <strong>Debate Proposition:</strong> With enough data we can solve safety and alignment in human-centered robotics.
   </td>
 </tr>
 
