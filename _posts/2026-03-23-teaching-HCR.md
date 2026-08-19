@@ -50,7 +50,7 @@ After this class, you will be familiar with the state of the art and open challe
 | Homework assignments (3 × 10%, mix of theoretical and programming tasks) | 30% |
 | Paper discussion | 5% |
 | In-class debate | 5% |
-| Lightning talk | 5% |
+| Project lightning talk | 5% |
 | Midterm project report | 5% |
 | Final project presentation | 20% |
 | Final project report | 30% |
@@ -388,6 +388,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>
     <strong>Required Reading 1:</strong> <a href="https://arxiv.org/abs/2510.18082" target="_blank">Provably Optimal Reinforcement Learning under Safety Filtering. Oh et al. (2025)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://sia-lab-git.github.io/Verification_of_Neural_Reachable_Tubes.pdf" target="_blank">Verification of Neural Reachable Tubes via Scenario Optimization and Conformal Prediction. Lin and Bansal (2024)</a><br>
+    <strong>Required Reading 3:</strong> <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-control-042920-020211" target="_blank">Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning. Brunke et al. (2022)</a><br>
     <strong>Optional Reading:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/9301422" target="_blank">Safety Verification and Robustness Analysis of Neural Networks via Quadratic Constraints and Semidefinite Programming. Fazlyab et al. (2020)</a>
   </td>
 </tr>
