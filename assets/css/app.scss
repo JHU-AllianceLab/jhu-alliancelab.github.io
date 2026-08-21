@@ -1319,3 +1319,14 @@ ul.news-list {
     min-height: 80vh;
   }
 }
+
+// ═══════════════════════════════════════════════════════
+//  SYLLABUS TABLE — shade Monday rows, leave Wednesday white
+// ═══════════════════════════════════════════════════════
+tr.mon-row {
+  background-color: #f0f0f0;
+}
+
+tr.wed-row {
+  background-color: #fff;
+}

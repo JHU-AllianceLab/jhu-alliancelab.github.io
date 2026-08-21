@@ -25,7 +25,7 @@ hero_scrim: true
 
 **Instructor:** [Prof. Haimin Hu](https://www.cs.jhu.edu/faculty/haimin-hu/)
 
-**Time:** MW 3-4:15 PM
+**Time and Location:** MW 3-4:15 PM, Hodson 305
 
 **Level:** Graduate & Undergraduate
 
@@ -90,7 +90,7 @@ After this class, you will be familiar with the state of the art and open challe
 ## Syllabus
 
 <div class="table-container">
-<table class="table is-fullwidth is-striped is-hoverable" style="font-size:0.85rem;">
+<table class="table is-fullwidth is-hoverable" style="font-size:0.85rem;">
 <thead>
 <tr>
   <th style="min-width:3rem">Week</th>
@@ -108,7 +108,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td colspan="6"><strong>Module I: Foundations of Interactive Robotics</strong></td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>1</td>
   <td>Aug 31</td>
   <td>1</td>
@@ -120,7 +120,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>1</td>
   <td>Sep 2</td>
   <td>2</td>
@@ -129,7 +129,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td><strong>Required Reading:</strong> <a href="http://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Boxonmaths.pdf" target="_blank">All models are wrong. George Box (1976)</a></td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>2</td>
   <td>Sep 7</td>
   <td></td>
@@ -138,7 +138,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td></td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>2</td>
   <td>Sep 9</td>
   <td>3</td>
@@ -149,7 +149,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>3</td>
   <td>Sep 14</td>
   <td>4</td>
@@ -161,7 +161,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>3</td>
   <td>Sep 16</td>
   <td>5</td>
@@ -174,7 +174,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>4</td>
   <td>Sep 21</td>
   <td>6</td>
@@ -194,7 +194,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>4</td>
   <td>Sep 23</td>
   <td>7</td>
@@ -207,7 +207,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>5</td>
   <td>Sep 28</td>
   <td>8</td>
@@ -224,7 +224,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td colspan="6"><strong>Module II: The Game Theory of Human-Robot Interaction</strong></td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>5</td>
   <td>Sep 30</td>
   <td>9</td>
@@ -242,7 +242,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>6</td>
   <td>Oct 5</td>
   <td>10</td>
@@ -257,7 +257,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>6</td>
   <td>Oct 7</td>
   <td>11</td>
@@ -293,7 +293,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 
 
-<tr>
+<tr class="mon-row">
   <td>7</td>
   <td>Oct 12</td>
   <td>12</td>
@@ -310,7 +310,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>7</td>
   <td>Oct 14</td>
   <td>13</td>
@@ -326,7 +326,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>8</td>
   <td>Oct 19</td>
   <td>14</td>
@@ -364,7 +364,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 
 
-<tr>
+<tr class="wed-row">
   <td>8</td>
   <td>Oct 21</td>
   <td>15</td>
@@ -379,7 +379,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>9</td>
   <td>Oct 26</td>
   <td>16</td>
@@ -393,7 +393,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>9</td>
   <td>Oct 28</td>
   <td>17</td>
@@ -405,13 +405,22 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>10</td>
   <td>Nov 2</td>
   <td>18</td>
-  <td>Midterm "mini-conference": 2-min lightning talks</td>
-  <td><span class="tag is-danger is-light">Lightning talks</span></td>
-  <td></td>
+  <td>Inverse RL and games</td>
+  <td>
+    <span class="tag is-success is-light">Lecture</span><br>
+    <span class="tag is-warning is-light">Debate</span><br>
+    <span class="tag is-info is-light">HW release</span>
+  </td>
+  <td>
+    <strong>Debate Proposition:</strong> Safe (reinforcement) learning is fundamentally Mission Impossible for robots in real-world deployment.<br>
+    <strong>Required Reading:</strong> <a href="https://ai.stanford.edu/~amaas/papers/amaas_aaai.pdf" target="_blank">Maximum Entropy Inverse Reinforcement Learning. Ziebart et al. (2008)</a><br>
+    <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2106.03611" target="_blank">Inferring Objectives in Continuous Dynamic Games from Noise-Corrupted Partial State Observations. Peters et al. (2021)</a><br>
+    <strong>Homework 3:</strong> Safe RL, inverse games
+  </td>
 </tr>
 
 <!-- <tr>
@@ -427,31 +436,12 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr> -->
 
-<tr>
+<tr class="wed-row">
   <td>10</td>
   <td>Nov 4</td>
   <td>19</td>
-  <td>Inverse RL and games</td>
-  <td>
-    <span class="tag is-success is-light">Lecture</span><br>
-    <span class="tag is-warning is-light">Debate</span><br>
-    <span class="tag is-info is-light">HW release</span>
-  </td>
-  <td>
-    <strong>Debate Proposition:</strong> Safe (reinforcement) learning is fundamentally Mission Impossible for robots in real-world deployment.<br>
-    <strong>Required Reading:</strong> <a href="https://ai.stanford.edu/~amaas/papers/amaas_aaai.pdf" target="_blank">Maximum Entropy Inverse Reinforcement Learning. Ziebart et al. (2008)</a><br>
-    <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2106.03611" target="_blank">Inferring Objectives in Continuous Dynamic Games from Noise-Corrupted Partial State Observations. Peters et al. (2021)</a><br>
-    <strong>Homework 3:</strong> Safe RL, inverse games
-  </td>
-</tr>
-
-<tr>
-  <td>11</td>
-  <td>Nov 9</td>
-  <td>20</td>
   <td>Robot safety in the LLM era</td>
-  <td><span class="tag is-light">Paper discussion</span><br>
-  <span class="tag is-warning">Midterm report due</span>
+  <td><span class="tag is-light">Paper discussion</span>
   </td>
   <td>
     <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2503.07885" target="_blank">Safety Guardrails for LLM-Enabled Robots. Ravichandran et al. (2025)</a><br>
@@ -466,14 +456,14 @@ After this class, you will be familiar with the state of the art and open challe
   <td colspan="6"><strong>Module IV: Robots that Help Humans Learn</strong></td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>11</td>
-  <td>Nov 11</td>
-  <td>21</td>
+  <td>Nov 9</td>
+  <td>20</td>
   <td>Legibility and predictability</td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
-    <span class="tag is-warning is-light">Debate</span><br>
+    <span class="tag is-warning is-light">Debate</span>
     <!-- <span class="tag is-info">HW due</span> -->
   </td>
   <td>
@@ -483,7 +473,19 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
+  <td>11</td>
+  <td>Nov 11</td>
+  <td>21</td>
+  <td>Midterm "mini-conference": 2-min lightning talks</td>
+  <td>
+    <span class="tag is-danger is-light">Lightning talks</span><br>
+    <span class="tag is-warning">Midterm report due</span>
+  </td>
+  <td></td>
+</tr>
+
+<tr class="mon-row">
   <td>12</td>
   <td>Nov 16</td>
   <td>22</td>
@@ -500,7 +502,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>12</td>
   <td>Nov 18</td>
   <td>23</td>
@@ -517,7 +519,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>13</td>
   <td>Nov 23</td>
   <td></td>
@@ -526,7 +528,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td></td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>13</td>
   <td>Nov 25</td>
   <td></td>
@@ -535,7 +537,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td></td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>14</td>
   <td>Nov 30</td>
   <td>24</td>
@@ -549,7 +551,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>14</td>
   <td>Dec 2</td>
   <td>25</td>
@@ -563,7 +565,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
 </tr>
 
-<tr>
+<tr class="mon-row">
   <td>15</td>
   <td>Dec 7</td>
   <td>26</td>
@@ -572,7 +574,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td></td>
 </tr>
 
-<tr>
+<tr class="wed-row">
   <td>15</td>
   <td>Dec 9</td>
   <td>27</td>
