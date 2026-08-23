@@ -37,7 +37,7 @@ hero_scrim: true
 
 In this course, we will study fundamental concepts in human-centered robotics, with an emphasis on mathematical models of human-robot interaction and decision-making algorithms for safely deploying robots in human-populated environments. We will ground these ideas in applications such as autonomous vehicles, aerial robots, and home robots.
 
-We will start by introducing the main technical tools for robot planning and control in interactive, safety-critical settings through a game-theoretic lens. After that, we will turn our attention to human-centered robot learning and try to answer two tightly coupled questions: how can robots learn to safely work with humans and help humans learn. The course will combine seminar-style discussions of research papers and whiteboard-style lecture to introduce the key theoretical concepts, and the class project will give you an opportunity to explore the approaches covered in class and possibly combine them with your own research.
+We will start by introducing the main technical tools for robot planning and control in interactive, safety-critical settings through a game-theoretic lens. After that, we will turn our attention to human-centered robot learning and try to answer two tightly coupled questions: how can robots learn to safely work with humans and help humans learn. The course will combine seminar-style discussions of research papers and whiteboard-style lectures to introduce the key theoretical concepts, and the class project will give you an opportunity to explore the approaches covered in class and possibly combine them with your own research.
 
 After this class, you will be familiar with the state of the art and open challenges in safe and performant human-robot interaction, and you will understand the guarantees and tradeoffs offered by different algorithmic frameworks for human-centered robotics.
 
@@ -98,7 +98,7 @@ After this class, you will be familiar with the state of the art and open challe
   <th style="min-width:2rem">Lecture</th>
   <th style="min-width:13rem">Topic</th>
   <th style="min-width:9rem">Type</th>
-  <th>Notes</th>
+  <th style="min-width:17rem">Notes</th>
 </tr>
 </thead>
 <tbody>

@@ -1330,3 +1330,11 @@ tr.mon-row {
 tr.wed-row {
   background-color: #fff;
 }
+
+// Widen the main content column ~30% on the HCR teaching page only
+// (is-9 = 75% -> ~97.5%), since it doesn't share this row with anything else.
+.page-teaching-hcr #main-content {
+  width: 97.5% !important;
+  max-width: 97.5% !important;
+  flex: none !important;
+}
