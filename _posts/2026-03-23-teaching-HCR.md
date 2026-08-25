@@ -31,7 +31,7 @@ hero_scrim: true
 
 **Prerequisites:** Linear algebra, calculus, probability, and basic programming (e.g., EN.601.220, 601.226).
 
-
+**Signup Forms:** <a href="https://docs.google.com/spreadsheets/d/1sutnD1Dj4Z-mbWJmPLFTtC-6GucHD_GP/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Debates</a> · <a href="https://docs.google.com/spreadsheets/d/1wmoeDLFleFKPnt1-nXIKyTjMNMX_wwD3/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Paper Discussions</a>
 
 ## Course Description
 
@@ -112,10 +112,12 @@ After this class, you will be familiar with the state of the art and open challe
   <td>1</td>
   <td>Aug 31</td>
   <td>1</td>
-  <td>Introduction: Why should we study human-centered robotics?</td>
+  <td>Introduction: Why should we study human-centered robotics? <br>
+  <a href="https://drive.google.com/file/d/1mEarFeBFHhailApmPH6w_nQEkOXqmZLj/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td><span class="tag is-success is-light">Lecture</span></td>
   <td>
-  <strong>Recommended Podcast:</strong> <a href="https://magazine.caltech.edu/post/aaron-ames-wired-robotics-video" target="_blank">Robots Can Never Be Trusted?</a>
+  <strong>Recommended Podcast:</strong> <a href="https://magazine.caltech.edu/post/aaron-ames-wired-robotics-video" target="_blank">Can We Trust Robots?</a>
   <!-- <strong>Recommended Movie:</strong> <a href="https://www.nytimes.com/video/NYT-Presents/100000008464087/the-new-york-times-presents-elon-musks-crash-course.html" target="_blank">Elon Musk's Crash Course</a> -->
   </td>
 </tr>
@@ -267,7 +269,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-warning is-light">Debate</span>
   </td>
   <td>
-    <strong>Debate Proposition:</strong> Learning-based methods (e.g., RL) are more useful than optimization-based control (e.g., MPC) for deploying robots around people.<br>
+    <strong>Debate Proposition:</strong> Learning-based methods (e.g., RL) are more useful than optimization-based methods (e.g., MPC) for deploying robots around people.<br>
     <strong>Required Reading:</strong> <a href="https://web.archive.org/web/20220218155452id_/http://www.roboticsproceedings.org/rss12/p29.pdf" target="_blank">Planning for Autonomous Cars that Leverage Effects on Human Actions. Sadigh et al. (2018)</a><br>
     <!-- <strong>Optional Reading 1:</strong> <a href="https://psycnet.apa.org/record/1960-03588-000" target="_blank">Individual Choice Behavior. Luce (1959)</a><br> -->
     <strong>Optional Reading 1:</strong> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4137788/" target="_blank">Understanding the Intentions of Others: Re-Enactment of Intended Acts by 18-Month-Old Children. Meltzoff (1995)</a><br>
@@ -319,7 +321,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span></td>
   <td>
-    <strong>Debate Proposition:</strong> We can never enforce absolute (i.e, 100%) safety for human-robot interaction.<br>
+    <strong>Debate Proposition:</strong> We can never enforce absolute (i.e., 100%) safety for human-robot interaction.<br>
     <strong>Required Reading 1:</strong> <a href="https://proceedings.neurips.cc/paper_files/paper/2016/hash/c3395dd46c34fa7fd8d729d8cf88b7a8-Abstract.html" target="_blank">Cooperative Inverse Reinforcement Learning. Hadfield-Menell et al. (2016)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://arxiv.org/abs/1707.06354" target="_blank">Pragmatic-Pedagogic Value Alignment. Fisac et al. (2017)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2504.07091" target="_blank">AssistanceZero: Scalably Solving Assistance Games. Laidlaw et al. (2025)</a>
@@ -467,7 +469,7 @@ After this class, you will be familiar with the state of the art and open challe
     <!-- <span class="tag is-info">HW due</span> -->
   </td>
   <td>
-    <strong>Debate Proposition:</strong> Zero-sum games are a useful abstraction of safe robot operation in uncertain environments.<br>
+    <strong>Debate Proposition:</strong> Zero-sum games are a useful abstraction of safe robot operation in uncertain, human-populated environments.<br>
     <strong>Required Reading 1:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/6483603" target="_blank">Legibility and Predictability of Robot Motion. Dragan et al. (2013)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://www.science.org/doi/10.1126/scirobotics.aea7897" target="_blank">“Data Will Solve Robotics and Automation: True or false?”: A Debate. Amato et al. (2025)</a>
   </td>

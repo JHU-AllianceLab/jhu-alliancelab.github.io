@@ -12,5 +12,5 @@ hero_height: is-small
 # 2025
 {% bibliography --query @*[year=2025] %}
 
-# 2018–2024
+# 2024 and Before
 {% bibliography --query @*[year<=2024] %}
