@@ -47,7 +47,7 @@ After this class, you will be familiar with the state of the art and open challe
 
 | Component | Percentage |
 |:---|:---:|
-| Homework assignments (3 × 10%, mix of theoretical and programming tasks) | 30% |
+| Homework assignments (2 × 15%, mix of theoretical and programming tasks) | 30% |
 | Paper discussion | 5% |
 | In-class debate | 5% |
 | Project lightning talk | 5% |
@@ -184,7 +184,6 @@ After this class, you will be familiar with the state of the art and open challe
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span><br>
-    <span class="tag is-info is-light">HW release</span>
     <!-- <br><span class="tag is-primary is-light">Code demo</span> -->
   </td>
   <td>
@@ -192,7 +191,6 @@ After this class, you will be familiar with the state of the art and open challe
     <!-- <strong>Code Demo:</strong> Safety Filters<br> -->
     <strong>Required Reading:</strong> <a href="https://arxiv.org/pdf/1903.11199" target="_blank">Control Barrier Functions: Theory and Applications. Ames et al. (2019)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/pdf/1905.10691" target="_blank">Safe Reinforcement Learning with Nonlinear Dynamics via Model Predictive Shielding. Bastani (2020)</a><br>
-    <strong>Homework 1:</strong> Motion planning, robot safety
   </td>
 </tr>
 
@@ -216,8 +214,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td><a href="https://buzinguyen.com/" target="_blank">Duy P. Nguyen</a> (Waymo): Scaling safe RL for high-dimensional robotic systems</td>
   <td>
     <span class="tag is-success">Guest Lecture</span><br>
+    <span class="tag is-info is-light">HW release</span>
   </td>
   <td>
+  <strong>Homework 1:</strong> Motion planning, robot safety
   </td>
 </tr>
 
@@ -302,13 +302,11 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Safety filtering around humans</td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
-    <span class="tag is-info is-light">HW release</span>
   </td>
   <td>
     <strong>Required Reading 1:</strong> <a href="https://proceedings.mlr.press/v229/hu23b.html" target="_blank">Deception Game: Closing the Safety-Learning Loop in Interactive Robot Autonomy. Hu et al. (2023)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://www.roboticsproceedings.org/rss21/p093.pdf" target="_blank">Safety with Agency: Human-Centered Safety Filter with Application to AI-Assisted Motorsports. Oh et al. (2025)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/pdf/2012.03390.pdf" target="_blank">On Infusing Reachability-Based Safety Assurance within Planning Frameworks for Human-Robot Vehicle Interactions. Leung et al. (2020)</a><br>
-    <strong>Homework 2:</strong> Dynamic games, human intent modeling, POMDP
   </td>
 </tr>
 
@@ -386,12 +384,15 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Oct 26</td>
   <td>16</td>
   <td>Safe robot learning II: RL with safety filters, verification of learned policies</td>
-  <td><span class="tag is-success is-light">Lecture</span></td>
+  <td><span class="tag is-success is-light">Lecture</span><br>
+  <span class="tag is-info is-light">HW release</span>
+  </td>
   <td>
     <strong>Required Reading 1:</strong> <a href="https://arxiv.org/abs/2510.18082" target="_blank">Provably Optimal Reinforcement Learning under Safety Filtering. Oh et al. (2025)</a><br>
     <strong>Required Reading 2:</strong> <a href="https://sia-lab-git.github.io/Verification_of_Neural_Reachable_Tubes.pdf" target="_blank">Verification of Neural Reachable Tubes via Scenario Optimization and Conformal Prediction. Lin and Bansal (2024)</a><br>
     <strong>Required Reading 3:</strong> <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-control-042920-020211" target="_blank">Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning. Brunke et al. (2022)</a><br>
-    <strong>Optional Reading:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/9301422" target="_blank">Safety Verification and Robustness Analysis of Neural Networks via Quadratic Constraints and Semidefinite Programming. Fazlyab et al. (2020)</a>
+    <strong>Optional Reading:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/9301422" target="_blank">Safety Verification and Robustness Analysis of Neural Networks via Quadratic Constraints and Semidefinite Programming. Fazlyab et al. (2020)</a><br>
+    <strong>Homework 2:</strong> Dynamic games, safe learning, verification
   </td>
 </tr>
 
@@ -418,13 +419,11 @@ After this class, you will be familiar with the state of the art and open challe
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span><br>
-    <span class="tag is-info is-light">HW release</span>
   </td>
   <td>
     <strong>Debate Proposition:</strong> Safe (reinforcement) learning is fundamentally Mission Impossible for robots in real-world deployment.<br>
     <strong>Required Reading:</strong> <a href="https://ai.stanford.edu/~amaas/papers/amaas_aaai.pdf" target="_blank">Maximum Entropy Inverse Reinforcement Learning. Ziebart et al. (2008)</a><br>
     <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2106.03611" target="_blank">Inferring Objectives in Continuous Dynamic Games from Noise-Corrupted Partial State Observations. Peters et al. (2021)</a><br>
-    <strong>Homework 3:</strong> Safe RL, inverse games
   </td>
 </tr>
 
