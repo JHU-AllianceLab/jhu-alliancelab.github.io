@@ -55,6 +55,23 @@ After this class, you will be familiar with the state of the art and open challe
 | Final project presentation | 20% |
 | Final project report | 30% |
 
+<details markdown="1">
+<summary><strong>Letter grade conversion</strong> (click to expand)</summary>
+
+<div class="table-container" markdown="1">
+
+| Score Range | Grade | Score Range | Grade | Score Range | Grade |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| 95-100% | A+ | 79-82% | B | 66-70% | C- |
+| 90-95% | A | 76-79% | B- | 63-66% | D+ |
+| 85-90% | A- | 73-76% | C+ | 60-63% | D |
+| 82-85% | B+ | 70-73% | C | Below 60% | F |
+
+*Final scores may be curved.*
+</div>
+
+</details>
+
 
 ## Reference Textbooks
 
