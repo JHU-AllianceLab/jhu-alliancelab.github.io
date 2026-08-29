@@ -465,7 +465,8 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Nov 4</td>
   <td>19</td>
   <td>Robot safety in the LLM era</td>
-  <td><span class="tag is-light">Paper discussion</span>
+  <td><span class="tag is-light">Paper discussion</span><br>
+      <span class="tag is-warning">Midterm report due</span>
   </td>
   <td>
     <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2503.07885" target="_blank">Safety Guardrails for LLM-Enabled Robots. Ravichandran et al. (2025)</a><br>
@@ -504,7 +505,6 @@ After this class, you will be familiar with the state of the art and open challe
   <td>Midterm "mini-conference": 2-min lightning talks</td>
   <td>
     <span class="tag is-danger is-light">Lightning talks</span><br>
-    <span class="tag is-warning">Midterm report due</span>
   </td>
   <td></td>
 </tr>
