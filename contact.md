@@ -10,8 +10,30 @@ hero_height: is-small
 <p style="margin-bottom:.2rem"><strong>Prospective Ph.D. Students</strong></p>
 Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research proposal, CV, and description of your skills relevant to our lab's [work](/research/).
 
+*If you are applying for PhD fellowships, please feel free to [email](mailto:haimin@cs.jhu.edu) Professor Hu for advice and support.*
+
+<details markdown="1" style="margin-bottom:1rem;">
+<summary>Examples of PhD fellowships (click to expand)</summary>
+
+- [NSF GRFP](https://www.nsfgrfp.org/)
+- [DoD NDSEG](https://ndseg.org/)
+- [NASA NSTGRO](https://www.nasa.gov/nasa-space-technology-graduate-research-opportunities-nstgro/)
+- [Hertz Fellowship](https://www.hertzfoundation.org/hertz-fellowship/)
+- [DoD SMART Scholarship](https://www.smartscholarship.org/)
+- [DOE CSGF](https://www.krellinst.org/csgf/)
+- [NVIDIA Graduate Fellowship](https://research.nvidia.com/graduate-fellowships)
+- [Google PhD Fellowship](https://research.google/programs-and-events/phd-fellowship/)
+- [Meta PhD Fellowship](https://research.facebook.com/fellowship/)
+- [Apple Scholars in AI/ML](https://machinelearning.apple.com/updates/introducing-apple-scholars-aiml)
+- [Microsoft Research Fellowship](https://www.microsoft.com/en-us/research/academic-program/microsoft-research-fellowship/)
+- [Qualcomm Innovation Fellowship](https://www.qualcomm.com/research/university-relations/innovation-fellowship)
+
+</details>
+
 <p style="margin-bottom:.2rem"><strong>Current JHU Students and Prospective RAs</strong></p>
 Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research interests, CV, and description of your skills relevant to our lab's [work](/research/).
+
+
 
 <p style="margin-bottom:.2rem"><strong>Postdoctoral Researchers</strong></p>
 Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research proposal, CV, and description of your skills relevant to our lab's [work](/research/).
