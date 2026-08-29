@@ -33,6 +33,9 @@ hero_scrim: true
 
 **Signup Forms:** <a href="https://docs.google.com/spreadsheets/d/1sutnD1Dj4Z-mbWJmPLFTtC-6GucHD_GP/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Debates</a> · <a href="https://docs.google.com/spreadsheets/d/1wmoeDLFleFKPnt1-nXIKyTjMNMX_wwD3/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Paper Discussions</a>
 
+**Report Template:** <a href="https://roboticsconference.org/2019/12/04/paper-format/" target="_blank">RSS Format</a> (LaTeX preferred)
+
+
 ## Course Description
 
 In this course, we will study fundamental concepts in human-centered robotics, with an emphasis on mathematical models of human-robot interaction and decision-making algorithms for safely deploying robots in human-populated environments. We will ground these ideas in applications such as autonomous vehicles, aerial robots, and home robots.
