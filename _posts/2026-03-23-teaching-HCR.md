@@ -58,6 +58,8 @@ After this class, you will be familiar with the state of the art and open challe
 | Final project presentation | 20% |
 | Final project report | 30% |
 
+*Late policy: Late submissions incur a penalty of 20% points per day.*
+
 <details markdown="1">
 <summary><strong>Letter grade conversion</strong> (click to expand)</summary>
 
@@ -72,6 +74,25 @@ After this class, you will be familiar with the state of the art and open challe
 
 *Final scores may be curved.*
 </div>
+
+</details>
+
+<details markdown="1">
+<summary><strong>Generative AI Policy</strong> (click to expand)</summary>
+
+<p style="border-bottom:none; padding-bottom:0; margin-top:1rem; margin-bottom:.5rem;"><strong>Allowed</strong></p>
+
+- Helping you understand a paper.
+- Helping you understand a homework assignment.
+- Helping with literature reviews (you are responsible for verifying any **hallucinated references**).
+- Brainstorming research ideas.
+- Generating **illustrative figures** and **polishing** text in presentations and reports.
+
+<p style="border-bottom:none; padding-bottom:0; margin-bottom:.5rem;"><strong>Not Allowed (can result in losing all points on the assignment)</strong></p>
+
+- Generating **entire slides** in a presentation.
+- Generating **entire solutions or paragraphs** in assignments and reports.
+- Generating core coding solutions (e.g., all of `main.py`).
 
 </details>
 
