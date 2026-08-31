@@ -1338,3 +1338,22 @@ tr.wed-row {
   max-width: 97.5% !important;
   flex: none !important;
 }
+
+// Grade-scale table: separate the three (Score Range, Grade) column pairs
+.grade-scale-table table {
+  th, td {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  th:nth-child(2), td:nth-child(2),
+  th:nth-child(4), td:nth-child(4) {
+    padding-right: 1.6rem;
+    border-right: 1px solid var(--border);
+  }
+
+  th:nth-child(3), td:nth-child(3),
+  th:nth-child(5), td:nth-child(5) {
+    padding-left: 1.6rem;
+  }
+}
