@@ -167,7 +167,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>1</td>
   <td>Sep 2</td>
   <td>2</td>
-  <td>Elements of Human-Centered Robotics: Dynamical systems, control policies, uncertainty types, safety guarantees, runtime inference</td>
+  <td>Elements of Human-Centered Robotics: Dynamical systems, control policies, uncertainty types, safety guarantees, runtime inference <br>
+  <a href="https://drive.google.com/file/d/1YZtihyPOQ_h9bh2UFixHpuVpQ30wUCvg/view?usp=sharing">[Slides]</a>
+  </td>
   <td><span class="tag is-success is-light">Lecture</span></td>
   <td><strong>Required Reading:</strong> <a href="http://www-sop.inria.fr/members/Ian.Jermyn/philosophy/writings/Boxonmaths.pdf" target="_blank">All models are wrong. George Box (1976)</a></td>
 </tr>
