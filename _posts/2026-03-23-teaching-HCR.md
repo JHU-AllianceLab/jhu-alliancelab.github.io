@@ -27,6 +27,8 @@ hero_scrim: true
 
 **Time and Location:** MW 3-4:15 PM, Hodson 305
 
+**Office Hours:** M 4:15-5 PM, Malone 327
+
 **Level:** Graduate & Undergraduate
 
 **Prerequisites:** Linear algebra, calculus, probability, and basic programming (e.g., EN.601.220, 601.226).
