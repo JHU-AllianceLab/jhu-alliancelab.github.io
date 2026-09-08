@@ -190,7 +190,8 @@ After this class, you will be familiar with the state of the art and open challe
   <td>2</td>
   <td>Sep 9</td>
   <td>3</td>
-  <td>Robotic motion planning I: Optimal control and dynamic programming
+  <td>Robotic motion planning I: Optimal control and dynamic programming <br>
+  <a href="https://drive.google.com/file/d/12szbFCISzlSO13Fc8I9D9ufdfWOdewKf/view?usp=sharing">[Slides]</a>
   </td>
   <td><span class="tag is-success is-light">Lecture</span><br>
   <span class="tag is-warning">Signup Forms Due</span></td>
@@ -203,7 +204,8 @@ After this class, you will be familiar with the state of the art and open challe
   <td>3</td>
   <td>Sep 14</td>
   <td>4</td>
-  <td>Robotic motion planning II: ILQR, MPC, RL, Search Algorithms</td>
+  <td>Robotic motion planning II: ILQR, MPC, RL, Search Algorithms <br>
+  <a href="https://drive.google.com/file/d/12szbFCISzlSO13Fc8I9D9ufdfWOdewKf/view?usp=sharing">[Slides]</a></td>
   <td><span class="tag is-success is-light">Lecture</span></td>
   <td>
     <strong>Optional Reading 1:</strong> <a href="https://sites.google.com/berkeley.edu/mpc-lab/mpc-course-material" target="_blank">Predictive Control for Linear and Hybrid Systems. Borrelli, Bemporad, Morari (2016)</a><br>
