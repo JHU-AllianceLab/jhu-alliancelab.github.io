@@ -35,6 +35,10 @@ hero_scrim: true
 
 **Signup Forms:** <a href="https://docs.google.com/spreadsheets/d/1sutnD1Dj4Z-mbWJmPLFTtC-6GucHD_GP/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Debates</a> · <a href="https://docs.google.com/spreadsheets/d/1wmoeDLFleFKPnt1-nXIKyTjMNMX_wwD3/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Paper Discussions</a>
 
+<div class="notification is-warning is-light" style="padding:.75rem 1rem; margin:.75rem 0;">
+If you're presenting a paper at the next lecture, please check in with Prof. Hu at the end of the preceding lecture (your presentation doesn't need to be complete at that point).
+</div>
+
 **Report Template:** <a href="https://roboticsconference.org/2019/12/04/paper-format/" target="_blank">RSS Format</a> (LaTeX preferred)
 
 
