@@ -46,6 +46,8 @@ We are proud to be part of the [Data Science and AI Institute](https://ai.jhu.ed
 # News
 
 <ul class="news-list">
+  <li><span class="news-date">Sep 2026</span> <span>Our <a href="https://ai-coaching-drone-racing.github.io/">AI coaching for FPV drone racing work</a> was accepted to CoRL 2026.</span></li>
+  <li><span class="news-date">Aug 2026</span> <span>The inaugural cohort of PhD students, <a href="https://zizhe.io/">Zizhe</a>, <a href="https://danny-zyh.github.io/">Yuanhong</a>, <a href="https://bethalageetachandraraju.github.io/">Geeta</a>, and <a href="https://www.linkedin.com/in/shereiff-garrett-b-s-393429230">Shereiff</a> joined the Alliance AI Lab. Welcome!</span></li>
   <!-- <li><span class="news-date">Aug 2026</span> <span>The Alliance AI Lab is selected to join <a href="https://www.apodex.com/frontier-program">the Apodex Frontier Program</a>.</span></li> -->
   <li><span class="news-date">Jul 2026</span> <span>The Alliance AI Lab is affiliated with <a href="https://iaseai.org/affiliates">the International Association for Safe & Ethical AI (IASEAI)</a>.</span></li>
   <li><span class="news-date">Mar 2026</span> The Alliance AI Lab website is launched!</li>
