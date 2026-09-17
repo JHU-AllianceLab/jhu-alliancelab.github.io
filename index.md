@@ -57,6 +57,16 @@ We are proud to be part of the [Data Science and AI Institute](https://ai.jhu.ed
 
   <div class="linkedin-item">
     <iframe 
+      src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7506385924029685760?collapsed=1"
+      height="400"
+      width="400"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="linkedin-item">
+    <iframe 
       src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7478139421171834880?collapsed=1"
       height="400"
       width="400"
