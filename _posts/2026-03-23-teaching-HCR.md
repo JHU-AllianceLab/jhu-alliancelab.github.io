@@ -224,7 +224,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>3</td>
   <td>Sep 16</td>
   <td>5</td>
-  <td>Robot safety I: Operational design domain, safety filters, HJ reachability</td>
+  <td>Robot safety I: Operational design domain, safety filters, HJ reachability <br>
+  <a href="https://drive.google.com/file/d/1a0iSxLU_EJ-27Prf601etivtCIBSnI-6/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td><span class="tag is-success is-light">Lecture</span>
   </td>
   <td>
@@ -238,7 +240,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>4</td>
   <td>Sep 21</td>
   <td>6</td>
-  <td>Robot safety II: CBFs, rollout/gameplay filters, unified safety filter theory </td>
+  <td>Robot safety II: CBFs, rollout/gameplay filters, unified safety filter theory <br>
+  <a href="https://drive.google.com/file/d/1a0iSxLU_EJ-27Prf601etivtCIBSnI-6/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span><br>
