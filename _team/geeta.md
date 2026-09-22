@@ -9,4 +9,7 @@ website: https://bethalageetachandraraju.github.io
 email: bethalageetachandraraju@gmail.com
 linkedin: https://www.linkedin.com/in/geeta-chandra-raju-bethala/
 scholar: https://scholar.google.com/citations?user=FlJ6woUAAAAJ&hl=en
+interests:
+  - Humanoid
+  - Compliance control
 ---

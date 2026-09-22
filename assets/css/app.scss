@@ -960,6 +960,32 @@ ul.no-bullet {
   i { margin-right: .35rem; color: var(--jhu-gold); }
 }
 
+.team-card-award {
+  font-size: .74rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-bottom: .3rem;
+
+  i { margin-right: .3rem; color: var(--jhu-gold); font-size: .7rem; }
+}
+
+.team-card-interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  margin-bottom: .4rem;
+}
+
+.team-interest-tag {
+  font-size: .68rem;
+  font-weight: 500;
+  color: var(--jhu-blue-mid);
+  background: var(--bg-blue);
+  padding: .1rem .5rem;
+  border-radius: 999px;
+  line-height: 1.5;
+}
+
 .pub-note {
   font-size: .8rem;
   font-style: italic;

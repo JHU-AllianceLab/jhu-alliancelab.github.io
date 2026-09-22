@@ -99,7 +99,13 @@ show_sidebar: false
       {% endif %}
       <div class="card-content">
         <p class="title is-6">{{ product.title }}</p>
+        {% if product.award %}<p class="team-card-award"><i class="fas fa-award"></i>{{ product.award }}</p>{% endif %}
         {% if product.note %}<p class="team-card-note">{{ product.note }}</p>{% endif %}
+        {% if product.interests %}
+        <div class="team-card-interests">
+          {% for interest in product.interests %}<span class="team-interest-tag">{{ interest }}</span>{% endfor %}
+        </div>
+        {% endif %}
         <div class="team-icon-links">
           {% if product.website %}<a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="Website"><i
               class="fas fa-globe"></i></a>{% endif %}
@@ -109,6 +115,8 @@ show_sidebar: false
             aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
           {% if product.scholar %}<a href="{{ product.scholar }}" target="_blank" rel="noopener"
             aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+          {% if product.github %}<a href="{{ product.github }}" target="_blank" rel="noopener"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>{% endif %}
         </div>
       </div>
     </div>
@@ -119,9 +127,12 @@ show_sidebar: false
 
 <h2 class="team-section-title">Masters Students</h2>
 <div class="columns is-multiline">
-  {% assign sorted_ms = site.team | where:"category","master_student" %}
+  {% assign ms_real = site.team | where:"category","master_student" | where_exp:"item", "item.placeholder != true" | sort: "order" %}
+  {% assign ms_placeholders = site.team | where:"category","master_student" | where:"placeholder", true %}
+  {% assign sorted_ms = ms_real | concat: ms_placeholders %}
   {% for product in sorted_ms %}
   <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    {% if product.placeholder %}
     <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
       {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
       <div class="card team-card">
@@ -136,15 +147,55 @@ show_sidebar: false
         </div>
       </div>
     </a>
+    {% else %}
+    <div class="card team-card">
+      {% if product.image %}
+      <div class="card-image">
+        {% if product.website %}
+        <a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="{{ product.title }} website">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </a>
+        {% else %}
+        <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        {% endif %}
+      </div>
+      {% endif %}
+      <div class="card-content">
+        <p class="title is-6">{{ product.title }}</p>
+        {% if product.award %}<p class="team-card-award"><i class="fas fa-award"></i>{{ product.award }}</p>{% endif %}
+        {% if product.note %}<p class="team-card-note">{{ product.note }}</p>{% endif %}
+        {% if product.interests %}
+        <div class="team-card-interests">
+          {% for interest in product.interests %}<span class="team-interest-tag">{{ interest }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        <div class="team-icon-links">
+          {% if product.website %}<a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="Website"><i
+              class="fas fa-globe"></i></a>{% endif %}
+          {% if product.email %}<a href="mailto:{{ product.email }}" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>{% endif %}
+          {% if product.linkedin %}<a href="{{ product.linkedin }}" target="_blank" rel="noopener"
+            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
+          {% if product.scholar %}<a href="{{ product.scholar }}" target="_blank" rel="noopener"
+            aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+          {% if product.github %}<a href="{{ product.github }}" target="_blank" rel="noopener"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
 
 <h2 class="team-section-title">Undergraduates</h2>
 <div class="columns is-multiline">
-  {% assign sorted_ug = site.team | where:"category","undergraduate" %}
+  {% assign ug_real = site.team | where:"category","undergraduate" | where_exp:"item", "item.placeholder != true" | sort: "order" %}
+  {% assign ug_placeholders = site.team | where:"category","undergraduate" | where:"placeholder", true %}
+  {% assign sorted_ug = ug_real | concat: ug_placeholders %}
   {% for product in sorted_ug %}
   <div class="column is-one-fifth-desktop is-6-tablet reveal delay-{{ forloop.index | modulo: 4 | plus: 1 }}">
+    {% if product.placeholder %}
     <a href="{% if product.external_link %}{{ product.external_link }}{% else %}{{ product.url | absolute_url }}{% endif %}"
       {% if product.external_link %}target="_blank" rel="noopener" {% endif %}>
       <div class="card team-card">
@@ -159,6 +210,43 @@ show_sidebar: false
         </div>
       </div>
     </a>
+    {% else %}
+    <div class="card team-card">
+      {% if product.image %}
+      <div class="card-image">
+        {% if product.website %}
+        <a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="{{ product.title }} website">
+          <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        </a>
+        {% else %}
+        <img src="{{ product.image | absolute_url }}" alt="{{ product.title }}" />
+        {% endif %}
+      </div>
+      {% endif %}
+      <div class="card-content">
+        <p class="title is-6">{{ product.title }}</p>
+        {% if product.award %}<p class="team-card-award"><i class="fas fa-award"></i>{{ product.award }}</p>{% endif %}
+        {% if product.note %}<p class="team-card-note">{{ product.note }}</p>{% endif %}
+        {% if product.interests %}
+        <div class="team-card-interests">
+          {% for interest in product.interests %}<span class="team-interest-tag">{{ interest }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        <div class="team-icon-links">
+          {% if product.website %}<a href="{{ product.website }}" target="_blank" rel="noopener" aria-label="Website"><i
+              class="fas fa-globe"></i></a>{% endif %}
+          {% if product.email %}<a href="mailto:{{ product.email }}" aria-label="Email"><i
+              class="fas fa-envelope"></i></a>{% endif %}
+          {% if product.linkedin %}<a href="{{ product.linkedin }}" target="_blank" rel="noopener"
+            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
+          {% if product.scholar %}<a href="{{ product.scholar }}" target="_blank" rel="noopener"
+            aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>{% endif %}
+          {% if product.github %}<a href="{{ product.github }}" target="_blank" rel="noopener"
+            aria-label="GitHub"><i class="fab fa-github"></i></a>{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
 </div>

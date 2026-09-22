@@ -8,4 +8,7 @@ website: https://zizhe.io/
 email: zizhe@cs.jhu.edu
 linkedin: https://www.linkedin.com/in/zizhe-zhang
 scholar: https://scholar.google.com/citations?user=0OY7JKAAAAAJ
+interests:
+  - Safe manipulation
+  - Physical HRI
 ---
