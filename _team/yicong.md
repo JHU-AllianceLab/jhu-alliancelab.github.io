@@ -9,5 +9,5 @@ scholar: https://scholar.google.com/citations?user=Ss2JOCYAAAAJ&hl=en
 linkedin: https://www.linkedin.com/in/yicong-lei-273a16430/
 interests:
   - AI coaching
-  - LLMs for HRI
+  - VLMs for HRI
 ---
