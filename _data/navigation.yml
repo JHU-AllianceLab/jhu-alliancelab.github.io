@@ -5,6 +5,8 @@
   #     link: /members/
   #   - name: Alumni
   #     link: /alumni/
+- name: Robots
+  link: /robots/
 - name: Research
   link: /research/
 - name: Publications
