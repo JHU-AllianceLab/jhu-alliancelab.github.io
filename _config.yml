@@ -16,7 +16,7 @@ lang: en
 theme_color: '#002D72'
 permalink: pretty
 show_sidebar: false
-favicon: ./img/alliance-logo.png
+favicon: ./img/favicon.png
 future: true
 
 collections:
