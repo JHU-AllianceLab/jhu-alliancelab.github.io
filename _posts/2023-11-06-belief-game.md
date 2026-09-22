@@ -43,5 +43,5 @@ published: true
 
 # Optional
 # Set to true to feature on the homepage
-featured: true
+featured: false
 ---

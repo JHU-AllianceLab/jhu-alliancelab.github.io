@@ -35,7 +35,8 @@ date: 2025-07-13 11:11:11
 # hero_image: aic.jpg
 
 hero_video: https://safe-racing.github.io/videos/safety_with_agency_short_compressed.mp4
-thumbnail: /img/posts/Safety_with_Agency/saferacing.png
+hero_fallback: /img/posts/Safety_with_Agency/saferacing.jpg
+thumbnail: /img/posts/Safety_with_Agency/saferacing.jpg
 video: https://safe-racing.github.io/videos/safety_with_agency_short_compressed.mp4
 
 # Set to true when ready to publish
