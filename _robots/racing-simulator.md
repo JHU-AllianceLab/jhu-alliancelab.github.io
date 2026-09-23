@@ -1,5 +1,5 @@
 ---
-title: P3 Sim Rig Turnkey
+title: Podium1Racing P3 Sim Rig Turnkey
 subtitle: Racing/Flight Simulator
 order: 5
 layout: team_member_personal_page
