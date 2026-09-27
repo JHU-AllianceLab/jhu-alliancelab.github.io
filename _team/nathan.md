@@ -4,6 +4,7 @@ category: undergraduate
 order: 1
 layout: team_member_personal_page
 image: img/members/ugs/Nathan_Baek.JPG
+award: "Pistritto Research Fellowship"
 email: sbaek19@jh.edu
 interests:
   - VLMs for HRI
