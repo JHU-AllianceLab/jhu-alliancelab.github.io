@@ -23,9 +23,43 @@ We are proud to be part of the [Data Science and AI Institute](https://ai.jhu.ed
   </div>
 </div>
 
-<video controls playsinline preload="metadata" poster="{{ site.baseurl }}/img/alliance-ai-lab-teaser.png" style="width:50%; display:block; margin:0 auto 4rem; border-radius:8px;">
-  <source src="https://haiminhu.wordpress.com/wp-content/uploads/2026/03/alliance_ai_lab_haimin_hu.mp4" type="video/mp4">
-</video>
+<div class="hero-video-row">
+  <div class="hero-side-videos">
+    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="{{ site.baseurl }}/img/home/sRAS.mp4" type="video/mp4">
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="{{ site.baseurl }}/img/home/S2C-quadruped.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-video-wrapper" onclick="this.classList.add('is-playing'); this.querySelector('video').play(); document.querySelectorAll('.hero-bg-video').forEach(function(v){ v.pause(); });">
+    <video id="hero-main-video" controls playsinline preload="metadata" poster="{{ site.baseurl }}/img/alliance-ai-lab-teaser.png" style="width:100%; display:block; border-radius:8px;">
+      <source src="https://haiminhu.wordpress.com/wp-content/uploads/2026/03/alliance_ai_lab_haimin_hu.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="hero-side-videos">
+    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="{{ site.baseurl }}/img/home/AIC-short.mp4" type="video/mp4">
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata">
+      <source src="{{ site.baseurl }}/img/home/WPF_combined.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<script>
+(function () {
+  var mainVideo = document.getElementById('hero-main-video');
+  if (!mainVideo) return;
+  function resumeSideVideos() {
+    document.querySelectorAll('.hero-bg-video').forEach(function (v) { v.play(); });
+  }
+  mainVideo.addEventListener('pause', resumeSideVideos);
+  mainVideo.addEventListener('ended', resumeSideVideos);
+})();
+</script>
 
 # Highlights
 {% assign highlights = site.posts
