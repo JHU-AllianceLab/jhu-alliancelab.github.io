@@ -41,6 +41,8 @@ If you're presenting a paper at the next lecture, please check in with Prof. Hu 
 
 **Report Template:** <a href="https://roboticsconference.org/2019/12/04/paper-format/" target="_blank">RSS Format</a> (LaTeX preferred)
 
+**Assignment Submission:** <a href="https://www.gradescope.com/courses/1362062" target="_blank">Gradescope</a>
+
 
 ## Course Description
 
