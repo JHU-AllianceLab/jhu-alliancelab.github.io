@@ -1,6 +1,6 @@
 ---
 title: Shereiff Garrett
-award: "Vivien Thomas Scholar"
+award: "Vivien Thomas Scholar, Monica McNamara Fellowship"
 note: "(co-advised with Krishna Murthy Jatavallabhula & Mathias Unberath)"
 category: phd_student
 order: 4
