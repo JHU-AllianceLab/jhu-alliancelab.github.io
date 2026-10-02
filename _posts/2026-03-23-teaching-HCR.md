@@ -312,12 +312,17 @@ After this class, you will be familiar with the state of the art and open challe
   <td>6</td>
   <td>Oct 5</td>
   <td>10</td>
-  <td><a href="https://allenzren.github.io/" target="_blank">Allen Z. Ren</a> (Physical Intelligence): Learning Generalist Robot Policies</td>
+  <td><a href="https://allenzren.github.io/" target="_blank">Allen Z. Ren</a> (Physical Intelligence): Diverse context and experience unlocks generalization in the physical world
+  <br>
+  <div style="margin-top:.5em"><em>Abstract: The pillars of modern machine learning have been the collection of diverse data and the design of informative, transferable input and output representations. In this talk, I will focus on the first two: data and the input space. In particular, I will discuss how diverse experiences for model training and rich context as model input complement each other, enabling broad generalization in generalist robots. I will center the discussion around PI&rsquo;s line of flagship models, tracing the progression from &pi;0 through &pi;0.5 and &pi;0.6 to &pi;0.7. Through this evolution, I will highlight how our approaches to data and context have changed, and what we have learned about their roles in building increasingly general robot models. I will conclude by discussing what is still missing from today&rsquo;s robot foundation models and offer a glimpse into ongoing efforts at PI to address these gaps.</em></div>
+  </td>
   <td>
     <span class="tag is-success">Guest Lecture</span><br>
     <span class="tag is-warning">Project proposal due</span>
   </td>
   <td>
+    <strong>Required Reading:</strong> <a href="https://arxiv.org/abs/2410.24164" target="_blank">&pi;0: A Vision-Language-Action Flow Model for General Robot Control. Black et al. (2024)</a><br>
+    <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2504.16054" target="_blank">&pi;0.5: A Vision-Language-Action Model with Open-World Generalization. Black et al. (2025)</a><br>
     <!-- <strong>Paper 1:</strong> <a href="https://arxiv.org/abs/2111.03205" target="_blank">LILA: Language-Informed Latent Actions. Karamcheti et al. (2021)</a><br> -->
     <!-- <strong>Paper 3:</strong> <a href="https://arxiv.org/abs/2403.15959" target="_blank">Risk-Calibrated Human-Robot Interaction via Set-Valued Intent Prediction. Lidard et al. (2024)</a> -->
   </td>
