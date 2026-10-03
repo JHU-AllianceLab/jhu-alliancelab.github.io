@@ -34,7 +34,7 @@ We are proud to be part of the [Data Science and AI Institute](https://ai.jhu.ed
   </div>
 
   <div class="hero-video-wrapper" onclick="this.classList.add('is-playing'); this.querySelector('video').play(); document.querySelectorAll('.hero-bg-video').forEach(function(v){ v.pause(); });">
-    <video id="hero-main-video" controls playsinline preload="metadata" poster="{{ site.baseurl }}/img/alliance-ai-lab-teaser.png" style="width:100%; display:block; border-radius:8px;">
+    <video id="hero-main-video" controls playsinline preload="metadata" poster="{{ site.baseurl }}/img/alliance-ai-lab-teaser.jpg" style="width:100%; display:block; border-radius:8px;">
       <source src="https://haiminhu.wordpress.com/wp-content/uploads/2026/03/alliance_ai_lab_haimin_hu.mp4" type="video/mp4">
     </video>
   </div>
