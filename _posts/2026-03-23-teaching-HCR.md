@@ -314,7 +314,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>10</td>
   <td><a href="https://allenzren.github.io/" target="_blank">Allen Z. Ren</a> (Physical Intelligence): Diverse context and experience unlocks generalization in the physical world
   <br>
-  <a href="https://www.youtube.com/watch?v=0bYXsxjS8aI" target="_blank">[Talk link]</a>
+  <a href="https://www.youtube.com/watch?v=0bYXsxjS8aI" target="_blank">[Recording]</a>
   <div style="margin-top:.5em"><em>Abstract: The pillars of modern machine learning have been the collection of diverse data and the design of informative, transferable input and output representations. In this talk, I will focus on the first two: data and the input space. In particular, I will discuss how diverse experiences for model training and rich context as model input complement each other, enabling broad generalization in generalist robots. I will center the discussion around PI&rsquo;s line of flagship models, tracing the progression from &pi;0 through &pi;0.5 and &pi;0.6 to &pi;0.7. Through this evolution, I will highlight how our approaches to data and context have changed, and what we have learned about their roles in building increasingly general robot models. I will conclude by discussing what is still missing from today&rsquo;s robot foundation models and offer a glimpse into ongoing efforts at PI to address these gaps.</em></div>
   </td>
   <td>
