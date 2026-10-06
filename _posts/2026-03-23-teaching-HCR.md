@@ -281,7 +281,7 @@ After this class, you will be familiar with the state of the art and open challe
     <span class="tag is-info is-light">HW release</span>
   </td>
   <td>
-  <strong>Homework 1:</strong> Motion planning, robot safety
+  <strong>Homework 1:</strong> Dynamics, Uncertainty, Optimal Control, and Motion Planning
   </td>
 </tr>
 
@@ -462,7 +462,7 @@ After this class, you will be familiar with the state of the art and open challe
     <strong>Required Reading 2:</strong> <a href="https://sia-lab-git.github.io/Verification_of_Neural_Reachable_Tubes.pdf" target="_blank">Verification of Neural Reachable Tubes via Scenario Optimization and Conformal Prediction. Lin and Bansal (2024)</a><br>
     <strong>Required Reading 3:</strong> <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-control-042920-020211" target="_blank">Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning. Brunke et al. (2022)</a><br>
     <strong>Optional Reading:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/9301422" target="_blank">Safety Verification and Robustness Analysis of Neural Networks via Quadratic Constraints and Semidefinite Programming. Fazlyab et al. (2020)</a><br>
-    <strong>Homework 2:</strong> Dynamic games, safe learning, verification
+    <strong>Homework 2:</strong> Robot Safety, Dynamic Games, Safe Learning, and Verification
   </td>
 </tr>
 
