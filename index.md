@@ -16,7 +16,7 @@ home: true
 <div class="about-us-block">
   <img src="{{ site.baseurl }}/img/alliance-logo.png" alt="Alliance AI Lab logo" class="about-logo">
   <div class="about-text" markdown="1">
-Welcome to the Alliance (Algorithmic Learning and Interaction for Assured & Collaborative Embodied) AI Lab at Johns Hopkins University! Our mission is to enable human-centered embodied AI systems that are verifiable, deployable, and trustworthy in real-world settings. Towards this goal, we work on new algorithms, theorems, and systems grounded in dynamic game theory, integrating insights from reinforcement learning, generative AI, control-theoretic safety, and numerical optimization. <span style="color: var(--jhu-blue-mid); font-weight: 600;">We envision a future where humans and robots learn and grow together.</span>
+Welcome to the Alliance (Algorithmic Learning and Interaction for Assured & Collaborative Embodied) AI Lab at Johns Hopkins University! Our mission is to enable <span style="color: var(--jhu-blue-mid); font-weight: 600;">human-centered embodied AI systems</span> that are scalable, verifiable, and trustworthy in real-world settings. Towards this goal, we work on new algorithms, theorems, and systems, drawing on principles from dynamic game theory, reinforcement learning, foundation models, and control-theoretic safety. <span style="color: var(--jhu-blue-mid); font-weight: 600;">We envision a future where humans and robots learn and grow together.</span>
 
 
 We are proud to be part of the [Data Science and AI Institute](https://ai.jhu.edu/), [Laboratory for Computational Sensing and Robotics](https://lcsr.jhu.edu/), and [Institute for Assured Autonomy](https://iaa.jhu.edu/) at [Johns Hopkins University](https://www.jhu.edu).
