@@ -33,7 +33,7 @@ Currently, he serves as an Associate Editor for IEEE Robotics and Automation Let
 ## Links
 
 <div class="contact-links">
-<a href="https://haiminhu.org/wp-content/uploads/2026/03/haimin_hu_cv-1.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
+<a href="{{ site.baseurl }}/cv/Haimin_Hu_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
 <a href="mailto:haimin@cs.jhu.edu" target="_blank"><i class="fas fa-envelope"></i> Email</a>
 <a href="https://scholar.google.com/citations?hl=en&user=_UYmNdEAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
 <a href="https://haiminhu.org/" target="_blank"><i class="fas fa-globe"></i> Personal Website</a>
