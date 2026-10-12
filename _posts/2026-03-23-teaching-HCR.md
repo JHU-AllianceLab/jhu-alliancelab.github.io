@@ -294,7 +294,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>5</td>
   <td>Sep 30</td>
   <td>9</td>
-  <td>Introduction to dynamic game theory</td>
+  <td>Introduction to dynamic game theory
+  <br>
+  <a href="https://drive.google.com/file/d/1_FXVJ0oZOB1GljIyG7MQXkzXvCo9rKip/view?usp=drive_link" target="_blank">[Slides]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span>
     <!-- <br><span class="tag is-primary is-light">Code demo</span> -->
@@ -333,7 +336,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>6</td>
   <td>Oct 7</td>
   <td>11</td>
-  <td>Human-robot interaction as a dynamic game</td>
+  <td>Human-robot interaction as a dynamic game
+  <br>
+  <a href="https://drive.google.com/file/d/1_FXVJ0oZOB1GljIyG7MQXkzXvCo9rKip/view?usp=drive_link" target="_blank">[Slides]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span>
