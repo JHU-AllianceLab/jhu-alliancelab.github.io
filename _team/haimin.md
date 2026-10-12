@@ -20,10 +20,9 @@ link-new-tab: true
 ## Bio
 Haimin Hu is an Assistant Professor of Computer Science at Johns Hopkins University. His research focuses on the algorithmic foundations of human-centered autonomy. By integrating dynamic game theory with machine learning and safety-critical control, his work enables verifiable, deployable, and trustworthy embodied AI systems, from autonomous vehicles to drones and quadrupedal robots. Specifically, his research covers the following topics:
 
-- **Uncertainty-aware interactive motion planning:** How can robots plan safe and efficient motion by accounting for their evolving uncertainty, as well as their ability to reduce it through future interaction, sensing, communication, and learning?
-- **Human–AI co-evolution and co-adaptation:** How can embodied AI systems learn from human teammates while helping them refine existing skills and acquire new ones in a safe, personalized manner?
-- **Safe human-compatible autonomy:** How can autonomous systems ensure prescribed safety while remaining aligned with human values and attuned to human cognitive limitations?
-- **Scalable and generalizable strategic decision-making:** How can multi-robot systems make safe, coordinated decisions in dynamic, human-populated environments?
+- **Human-Robot Co-Evolution:** How can robots [learn from](https://ieeexplore.ieee.org/abstract/document/9303785), and [adapt to](https://safe-racing.github.io) human teammates while helping them [acquire and practice new skills](https://ai-coaching-drone-racing.github.io/) in a safe, personalized manner?
+- **Reliable and Competitive Agility:** How can agile robots plan [safe and competitive](https://alliance-ai.cs.jhu.edu/s2c/) motion by accounting for the evolving [interaction uncertainty](https://saferoboticslab.github.io/Belief-Game/) and their ability to [safely reduce it](https://haiminhu.org/research__trashed/sharp/) through future interaction, sensing, communication, and learning?
+- **Safe and Human-Compatible Autonomy:** How can autonomous systems [ensure prescribed safety](https://www.annualreviews.org/content/journals/10.1146/annurev-control-071723-102940) while remaining [aligned with human values](https://rl-hindsight.github.io/) and attuned to human cognitive limitations?
 
 He has received several awards and recognitions, including a 2026 Penn AI Fellow, a 2025 Robotics: Science and Systems Pioneer, a 2025 Cyber-Physical Systems Rising Star, and a 2024 Human-Robot Interaction Pioneer.
 
