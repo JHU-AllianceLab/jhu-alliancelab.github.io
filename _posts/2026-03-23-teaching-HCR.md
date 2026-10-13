@@ -2,6 +2,7 @@
 layout: post
 title: "EN.601.497/697 Human-Centered Robotics: Models and Algorithms"
 date: 2026-03-23 11:11:11
+term: "Fall 2026"
 categories: teaching
 description: "In this course, we will study fundamental concepts in human-centered robotics, with an emphasis on mathematical models of human-robot interaction and decision-making algorithms for safely deploying robots in human-populated environments."
 author: "AllianceAI"
