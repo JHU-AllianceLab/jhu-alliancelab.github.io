@@ -18,7 +18,7 @@ link-new-tab: true
 ---
 
 ## Bio
-Haimin Hu is an Assistant Professor of Computer Science at Johns Hopkins University. His research focuses on the algorithmic foundations of human-centered autonomy. By integrating dynamic game theory with machine learning and safety-critical control, his work enables verifiable, deployable, and trustworthy embodied AI systems, from autonomous vehicles to drones and quadrupedal robots. Specifically, his research covers the following topics:
+Haimin Hu is an Assistant Professor of Computer Science at Johns Hopkins University. His research focuses on the algorithmic foundations of human-centered autonomy. By integrating dynamic game theory with machine learning and safety-critical control, his work enables scalable, verifiable, and trustworthy robotic systems, from autonomous vehicles to manipulators and legged robots. Specifically, his research covers the following topics:
 
 - **Human-Robot Co-Evolution:** How can robots [learn from](https://ieeexplore.ieee.org/abstract/document/9303785), and [adapt to](https://safe-racing.github.io) human teammates while helping them [acquire and practice new skills](https://ai-coaching-drone-racing.github.io/) in a safe, personalized manner?
 - **Reliable and Competitive Agility:** How can agile robots plan [safe and competitive](https://alliance-ai.cs.jhu.edu/s2c/) motion by accounting for the evolving [interaction uncertainty](https://saferoboticslab.github.io/Belief-Game/) and their ability to [safely reduce it](https://haiminhu.org/research__trashed/sharp/) through future interaction, sensing, communication, and learning?
