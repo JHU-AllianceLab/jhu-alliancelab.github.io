@@ -376,7 +376,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>7</td>
   <td>Oct 12</td>
   <td>12</td>
-  <td>Safety filtering around humans</td>
+  <td>Safe and efficient HRI
+  <br>
+  <a href="https://drive.google.com/file/d/1K2yRUkYuDmh-hJwYVUfv2T_MLc64q9L1/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
   </td>
