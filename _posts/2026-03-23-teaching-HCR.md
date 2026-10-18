@@ -448,7 +448,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>8</td>
   <td>Oct 21</td>
   <td>15</td>
-  <td>Safe robot learning I: Multi-agent RL, safe RL, learning-based HJ reachability, adversarial RL</td>
+  <td>Safe robot learning I: Multi-agent RL, safe RL, learning-based HJ reachability, adversarial RL
+  <br>
+  <a href="https://drive.google.com/file/d/1Tf018nrO43dI-FB_hSMvA-SkNlDKe1Az/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td><span class="tag is-success is-light">Lecture</span></td>
   <td>
     <strong>Required Reading 1:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/8794107" target="_blank">Bridging Hamilton-Jacobi Safety Analysis and Reinforcement Learning. Fisac et al. (2019)</a><br>
@@ -463,7 +466,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>9</td>
   <td>Oct 26</td>
   <td>16</td>
-  <td>Safe robot learning II: RL with safety filters, verification of learned policies</td>
+  <td>Safe robot learning II: RL with safety filters, verification of learned policies
+  <br>
+  <a href="https://drive.google.com/file/d/1Tf018nrO43dI-FB_hSMvA-SkNlDKe1Az/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td><span class="tag is-success is-light">Lecture</span><br>
   <span class="tag is-info is-light">HW release</span>
   </td>
