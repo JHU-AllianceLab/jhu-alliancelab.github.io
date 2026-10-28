@@ -39,7 +39,7 @@ Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research
 Please send Professor Hu an [email](mailto:haimin@cs.jhu.edu) with your research proposal, CV, and description of your skills relevant to our lab's [work](/research/).
 
 ## Principle Investigator 
-<strong><a href="https://haiminhu.org" style="color:var(--jhu-blue); font-weight:700;">Prof. Haimin Hu</a></strong> <br>
+<strong><a href="https://haiminhu.org" style="color:var(--heading); font-weight:700;">Prof. Haimin Hu</a></strong> <br>
 Office: Malone 327 <br>
 3400 N Charles St, Baltimore, MD 21218 <br>
 <!-- <i class="fas fa-phone"></i> <a href="tel:+15105618285">(510) 561-8285</a> <br> -->
@@ -75,7 +75,7 @@ Johns Hopkins University <br>
 
 <!-- ## Visitors
 <div style="margin: 1.5rem 0;">
-  <p style="font-size:0.8rem; color:#888; letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Visitors Worldwide</p>
+  <p style="font-size:0.8rem; color:var(--muted); letter-spacing:0.05em; text-transform:uppercase; margin-bottom:0.5rem;">Visitors Worldwide</p>
   <div style="width: 50%;">
     <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=SjcMvFW80meUIpVMy5WL8Q0s97UzP-23tpp3vhsLaqk&cl=ffffff&w=a"></script>
   </div>

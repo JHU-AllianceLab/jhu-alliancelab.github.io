@@ -12,6 +12,10 @@
     <a href="https://lcsr.jhu.edu/" target="_blank" rel="noopener">Laboratory for Computational Sensing and Robotics</a>
     <span class="sep">·</span>
     <a href="https://iaa.jhu.edu/" target="_blank" rel="noopener">Institute for Assured Autonomy</a>
+    <button type="button" class="theme-toggle" aria-label="Toggle day/night colors" title="Toggle day/night colors">
+      <i class="fas fa-moon theme-icon-moon"></i>
+      <i class="fas fa-sun theme-icon-sun"></i>
+    </button>
   </div>
 </div>
 
@@ -66,6 +70,19 @@
         el.classList.toggle('is-active');
         target.classList.toggle('is-active');
       });
+    });
+    // Day/night toggle; an explicit choice is remembered, otherwise follow the OS
+    const root = document.documentElement;
+    const readStored = () => { try { return localStorage.getItem('theme'); } catch (e) { return null; } };
+    document.querySelectorAll('.theme-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    });
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      if (!readStored()) root.setAttribute('data-theme', e.matches ? 'dark' : 'light');
     });
     // Scroll shadow on nav
     const nav = document.getElementById('mainNav');

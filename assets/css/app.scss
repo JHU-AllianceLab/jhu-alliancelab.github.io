@@ -42,6 +42,51 @@ $radius-large: 10px;
   --shadow-md: 0 4px 20px rgba(0, 45, 114, 0.11);
   --shadow-lg: 0 8px 40px rgba(0, 45, 114, 0.14);
   --glow-hover: 0 0 0 1px rgba(104, 172, 229, 0.55), 0 10px 36px rgba(0, 78, 179, 0.22);
+
+  // Theme-aware roles; brand fills (hero, footer, buttons) keep --jhu-blue in both themes
+  --bg-page: #fff;
+  --bg-surface: #fff;
+  --text-main: #1A2030;
+  --heading: #002D72;
+  --link: #004EB3;
+  --row-alt: #f0f0f0;
+  --award-text: #8a6d00;
+  --thrust-num: var(--jhu-spirit-pale);
+  --h1-rule: var(--jhu-spirit-pale);
+  color-scheme: light;
+}
+
+@mixin night-tokens {
+  --bg-page: #0D1420;
+  --bg-surface: #141D2C;
+  --bg-soft: #18233A;
+  --bg-blue: #1B2A45;
+  --border: #2A3A56;
+  --text-main: #D7DFEA;
+  --text-mid: #AEBBCD;
+  --muted: #8492A8;
+  --heading: #E4ECF7;
+  --link: #8EC3F1;
+  --row-alt: #172133;
+  --award-text: #F1C400;
+  --thrust-num: #2E4468;
+  --h1-rule: var(--border);
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --glow-hover: 0 0 0 1px rgba(104, 172, 229, 0.55), 0 10px 36px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+// head.html sets data-theme before first paint; the media query is the no-JS fallback
+:root[data-theme="dark"] {
+  @include night-tokens;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include night-tokens;
+  }
 }
 
 .team-member-profile {
@@ -101,8 +146,9 @@ html {
 // ═══════════════════════════════════════════════════════
 body {
   font-family: 'Work Sans', sans-serif;
-  background: #fff;
-  color: #1A2030;
+  background: var(--bg-page);
+  color: var(--text-main);
+  transition: background-color .3s, color .3s;
 }
 
 h1,
@@ -113,7 +159,7 @@ h5,
 h6,
 .title {
   font-family: 'Roboto Slab', Georgia, serif;
-  color: var(--jhu-blue);
+  color: var(--heading);
   letter-spacing: -0.01em;
 }
 
@@ -127,11 +173,11 @@ h6,
 .content h3,
 .content h4 {
   font-family: 'Roboto Slab', Georgia, serif;
-  color: var(--jhu-blue);
+  color: var(--heading);
 }
 
 strong {
-  color: var(--jhu-blue);
+  color: var(--heading);
   font-weight: 700;
 }
 
@@ -139,12 +185,12 @@ code,
 pre {
   font-family: 'Source Code Pro', monospace;
   background: var(--bg-blue);
-  color: var(--jhu-blue-mid);
+  color: var(--link);
   border-radius: 3px;
 }
 
 .content a {
-  color: var(--jhu-blue-mid);
+  color: var(--link);
   font-weight: 500;
 }
 
@@ -189,7 +235,7 @@ pre {
 //  NAVBAR
 // ═══════════════════════════════════════════════════════
 .navbar.is-primary {
-  background: #fff;
+  background: var(--bg-surface);
   border-bottom: 3px solid var(--jhu-blue);
   min-height: 3.5rem;
   box-shadow: var(--shadow-sm);
@@ -207,7 +253,7 @@ pre {
   font-family: 'Roboto Slab', Georgia, serif !important;
   font-size: 1.2rem !important;
   font-weight: 700 !important;
-  color: var(--jhu-blue) !important;
+  color: var(--heading) !important;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -249,7 +295,7 @@ pre {
 
 .navbar.is-primary .navbar-item.is-active,
 .navbar.is-primary .navbar-link.is-active {
-  color: var(--jhu-blue) !important;
+  color: var(--heading) !important;
   background: transparent !important;
   border-bottom-color: var(--jhu-gold);
   font-weight: 700;
@@ -270,7 +316,7 @@ pre {
 }
 
 .navbar.is-primary .navbar-burger span {
-  background: var(--jhu-blue);
+  background: var(--heading);
 }
 
 .navbar-dropdown {
@@ -285,7 +331,48 @@ pre {
 
 .navbar-dropdown .navbar-item:hover {
   background: var(--bg-blue) !important;
-  color: var(--jhu-blue) !important;
+  color: var(--heading) !important;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0 .2rem;
+  cursor: pointer;
+  color: var(--jhu-spirit);
+  font-size: .85rem;
+  line-height: 1;
+  transition: color .2s, transform .3s;
+
+  &:hover { color: var(--jhu-gold); transform: rotate(-20deg); }
+
+  .theme-icon-sun { display: none; }
+}
+
+// The lab logo PNG has a baked-in white background; round it so it reads as a badge at night
+:root[data-theme="dark"] .about-logo { border-radius: 10px; }
+:root[data-theme="dark"] .navbar-logo img { border-radius: 3px; }
+
+// Bulma's pale "light" variants glare on a dark page; tint them instead
+:root[data-theme="dark"] {
+  tr.has-background-info-light { background-color: rgba(104, 172, 229, .16) !important; }
+  tr.has-background-warning-light { background-color: rgba(241, 196, 0, .14) !important; }
+  tr.has-background-success-light { background-color: rgba(72, 199, 116, .14) !important; }
+  tr.has-background-danger-light { background-color: rgba(241, 70, 104, .14) !important; }
+
+  .notification.is-warning.is-light {
+    background-color: rgba(241, 196, 0, .12);
+    color: var(--text-main);
+  }
+}
+
+.thrust-card a { color: var(--link); }
+
+:root[data-theme="dark"] .theme-toggle {
+  .theme-icon-moon { display: none; }
+  .theme-icon-sun { display: inline-block; }
 }
 
 // ═══════════════════════════════════════════════════════
@@ -548,12 +635,12 @@ pre {
 // ═══════════════════════════════════════════════════════
 .section {
   padding: 4rem 1.5rem;
-  background: #fff;
+  background: var(--bg-page);
 }
 
 .content h1 {
   font-size: 2rem;
-  border-bottom: 2px solid var(--jhu-spirit-pale);
+  border-bottom: 2px solid var(--h1-rule);
   padding-bottom: .4rem;
 }
 
@@ -573,7 +660,7 @@ pre {
   font-size: .7rem;
   letter-spacing: .15em;
   text-transform: uppercase;
-  color: var(--jhu-blue-mid);
+  color: var(--link);
   margin-bottom: .5rem;
 }
 
@@ -600,7 +687,7 @@ pre {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #fff;
+  background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: 10px !important;
   overflow: hidden;
@@ -649,7 +736,7 @@ pre {
 }
 
 .card-content .title {
-  color: var(--jhu-blue) !important;
+  color: var(--heading) !important;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -888,7 +975,7 @@ pre {
 
 .team-card .card-content .title {
   font-size: .9rem !important;
-  color: var(--jhu-blue) !important;
+  color: var(--heading) !important;
   margin-bottom: .15rem;
 }
 
@@ -910,9 +997,9 @@ pre {
   margin-top: .3rem;
 
   a {
-    color: var(--jhu-blue-mid);
+    color: var(--link);
     font-size: 1rem;
-    &:hover { color: var(--jhu-blue); }
+    &:hover { color: var(--heading); }
   }
 }
 
@@ -936,7 +1023,7 @@ pre {
 .team-section-title {
   font-family: 'Roboto Slab', serif;
   font-size: 1.4rem;
-  color: var(--jhu-blue);
+  color: var(--heading);
   border-left: 4px solid var(--jhu-gold);
   padding-left: .85rem;
   margin: 2.5rem 0 1.2rem;
@@ -1005,7 +1092,7 @@ ul.no-bullet {
 
 .pub-title {
   font-weight: 700;
-  color: var(--jhu-blue);
+  color: var(--heading);
   font-size: 1.03rem;
   line-height: 1.4;
   margin-bottom: .2rem;
@@ -1017,20 +1104,20 @@ ul.no-bullet {
   line-height: 1.5;
   margin-bottom: .15rem;
 
-  strong { color: var(--jhu-blue-mid); }
+  strong { color: var(--link); }
 }
 
 .pub-venue {
   font-size: .92rem;
   font-style: italic;
-  color: #1A2030;
+  color: var(--text-main);
   margin-bottom: .3rem;
 }
 
 .pub-award {
   font-size: .82rem;
   font-weight: 600;
-  color: #8a6d00;
+  color: var(--award-text);
   background: rgba(241, 196, 0, .15);
   display: inline-block;
   padding: .15rem .6rem;
@@ -1059,7 +1146,7 @@ ul.no-bullet {
 .team-interest-tag {
   font-size: .68rem;
   font-weight: 500;
-  color: var(--jhu-blue-mid);
+  color: var(--link);
   background: var(--bg-blue);
   padding: .1rem .5rem;
   border-radius: 999px;
@@ -1087,7 +1174,7 @@ ul.no-bullet {
   padding: .2rem .7rem;
   border-radius: 999px;
   background: var(--bg-blue);
-  color: var(--jhu-blue-mid);
+  color: var(--link);
   text-decoration: none;
   transition: background .2s, color .2s;
 
@@ -1138,7 +1225,7 @@ ul.news-list {
   font-family: 'Roboto Slab', serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--jhu-blue);
+  color: var(--heading);
   margin-bottom: 1rem;
 }
 
@@ -1160,7 +1247,7 @@ ul.news-list {
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--jhu-spirit-pale);
+  color: var(--thrust-num);
   line-height: 1;
   margin-bottom: .5rem;
 }
@@ -1169,7 +1256,7 @@ ul.news-list {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 700;
-  color: var(--jhu-blue);
+  color: var(--heading);
   margin-bottom: .75rem !important;
 }
 
@@ -1186,12 +1273,12 @@ ul.news-list {
   gap: .4rem;
 
   a {
-    color: var(--jhu-blue-mid);
+    color: var(--link);
     font-weight: 500;
     white-space: nowrap;
 
     i { width: 1.2rem; text-align: center; margin-right: .3rem; }
-    &:hover { color: var(--jhu-blue); }
+    &:hover { color: var(--heading); }
   }
 }
 
@@ -1222,7 +1309,7 @@ ul.news-list {
 }
 
 .hero.is-light .title {
-  color: var(--jhu-blue) !important;
+  color: var(--heading) !important;
 }
 
 .hero.is-light .subtitle {
@@ -1231,7 +1318,7 @@ ul.news-list {
 
 .hero.is-light .button.is-primary {
   background: var(--jhu-blue);
-  border-color: var(--jhu-blue);
+  border-color: var(--heading);
   font-weight: 600;
   border-radius: 6px !important;
 }
@@ -1246,7 +1333,7 @@ ul.news-list {
 // ═══════════════════════════════════════════════════════
 .button.is-primary {
   background: var(--jhu-blue);
-  border-color: var(--jhu-blue);
+  border-color: var(--heading);
   font-weight: 600;
   border-radius: 6px !important;
   transition: background .2s, box-shadow .2s, transform .2s;
@@ -1254,7 +1341,7 @@ ul.news-list {
 
 .button.is-primary:hover {
   background: var(--jhu-blue-mid);
-  border-color: var(--jhu-blue-mid);
+  border-color: var(--link);
   box-shadow: 0 4px 16px rgba(0, 45, 114, .28);
   transform: translateY(-1px);
 }
@@ -1389,7 +1476,7 @@ ul.news-list {
 }
 
 .showcase .showcase-content .title {
-  color: var(--jhu-blue);
+  color: var(--heading);
 }
 
 .showcase .showcase-content .button.is-primary {
@@ -1430,11 +1517,11 @@ ul.news-list {
 //  SYLLABUS TABLE — shade Monday rows, leave Wednesday white
 // ═══════════════════════════════════════════════════════
 tr.mon-row {
-  background-color: #f0f0f0;
+  background-color: var(--row-alt);
 }
 
 tr.wed-row {
-  background-color: #fff;
+  background-color: var(--bg-page);
 }
 
 // Widen the main content column ~30% on the HCR teaching page only
