@@ -488,6 +488,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>17</td>
   <td><a href="https://nandantumu.com/" target="_blank">Nandan Tumu</a> (NEC Labs): Conformal Prediction for Trustworthy Robot Learning
   <br>
+  <a href="https://www.youtube.com/watch?v=J6UPth_hTJE" target="_blank">[Recording]</a>
   <div style="margin-top:.5em"><em>Abstract: In this lecture, we will cover the basics of Conformal Prediction, and its' applications in robotics. We will address approaches to address uncertainty in robotic sensing, perception, and safety, and the conditions required to achieve safety guarantees with conformal methods. By the end of this lecture, the student should come away with an understanding of the potential and limitations of Conformal Prediction in robotics.</em></div>
   </td>
   <td>
