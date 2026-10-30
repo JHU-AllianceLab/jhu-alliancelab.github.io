@@ -44,6 +44,8 @@ If you're presenting a paper at the next lecture, please check in with Prof. Hu 
 
 **Assignment Submission:** <a href="https://www.gradescope.com/courses/1362062" target="_blank">Gradescope</a>
 
+**Lightning Talks Schedule:** <a href="https://docs.google.com/spreadsheets/d/1ZHKNxOin425uS8t-w5yS3Xkq7lK3x4Zz/edit?usp=sharing&ouid=106257093638235710746&rtpof=true&sd=true" target="_blank">Google Sheet</a>
+
 
 ## Course Description
 
