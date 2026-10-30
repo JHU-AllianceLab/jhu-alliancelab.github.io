@@ -34,7 +34,7 @@ home: true
       <span class="hw-pumpkin-hint">Trick or treat? Click the pumpkin 👆</span>
     </button>
   </div>
-  <p class="hw-credit">Video credit: Geeta Chandra Raju Bethala</p>
+  <p class="hw-credit">Demo made by: Geeta Chandra Raju Bethala</p>
 </section>
 
 <script>
