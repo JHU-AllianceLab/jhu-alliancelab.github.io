@@ -12,6 +12,47 @@ hero_scrim: false
 home: true
 ---
 
+<section class="halloween-feature" id="halloween-feature" hidden>
+  <svg class="hw-web hw-web--tl" viewBox="0 0 120 120" aria-hidden="true"><path d="M0 0L120 120M0 0L60 120M0 0L120 60M0 0L0 120M0 0L120 0M0 30Q30 30 30 0M0 60Q60 60 60 0M0 90Q90 90 90 0M0 118Q118 118 118 0"/></svg>
+  <svg class="hw-web hw-web--tr" viewBox="0 0 120 120" aria-hidden="true"><path d="M0 0L120 120M0 0L60 120M0 0L120 60M0 0L0 120M0 0L120 0M0 30Q30 30 30 0M0 60Q60 60 60 0M0 90Q90 90 90 0M0 118Q118 118 118 0"/></svg>
+  <div class="hw-spider" aria-hidden="true"><span class="hw-thread"></span><span class="hw-body">🕷️</span></div>
+
+  <h2 class="hw-title">🎃 Happy Halloween from the Alliance Lab 🎃</h2>
+  <div class="hw-frame" id="hw-frame">
+    <video class="hw-video" loop playsinline controls preload="none">
+      <source src="https://haiminhu.wordpress.com/wp-content/uploads/2026/10/spidernoid.mp4" type="video/mp4">
+    </video>
+    <div class="hw-grain" aria-hidden="true"></div>
+    <div class="hw-vignette" aria-hidden="true"></div>
+    <div class="hw-caption">
+      <span class="hw-caption-small">Introducing the</span>
+      <span class="hw-caption-big">SpiderNoid</span>
+    </div>
+    <button type="button" class="hw-pumpkin" aria-label="Open the pumpkin to watch the Halloween video">
+      <span class="hw-pumpkin-ring" aria-hidden="true"></span>
+      <span class="hw-pumpkin-face" aria-hidden="true">🎃</span>
+      <span class="hw-pumpkin-hint">Trick or treat? Click the pumpkin 👆</span>
+    </button>
+  </div>
+  <p class="hw-credit">Video credit: Geeta Chandra Raju Bethala</p>
+</section>
+
+<script>
+  (function () {
+    var now = new Date();
+    // Shown from Oct 25 through the end of Nov 13 (visitor's local time)
+    if (now >= new Date(2026, 9, 25) && now < new Date(2026, 10, 14)) {
+      document.getElementById('halloween-feature').hidden = false;
+    }
+    var frame = document.getElementById('hw-frame');
+    frame.querySelector('.hw-pumpkin').addEventListener('click', function () {
+      frame.classList.add('is-open');
+      var video = frame.querySelector('video');
+      video.play();
+    });
+  })();
+</script>
+
 # About Us
 <div class="about-us-block">
   <img src="{{ site.baseurl }}/img/alliance-logo.png" alt="Alliance AI Lab logo" class="about-logo">
