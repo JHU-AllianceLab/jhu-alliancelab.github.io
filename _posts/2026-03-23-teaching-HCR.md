@@ -396,7 +396,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>7</td>
   <td>Oct 14</td>
   <td>13</td>
-  <td>Cooperative games and value alignment</td>
+  <td>Cooperative games and value alignment
+  <br>
+  <a href="/teaching/HCR/game/" target="_blank">[Game link - student]</a> <a href="/teaching/HCR/game/?instructor" target="_blank">[Game link - instructor]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span></td>

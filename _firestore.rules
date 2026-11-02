@@ -1,0 +1,36 @@
+rules_version = '2';
+// Paste into Firebase console → Firestore Database → Rules, then click Publish.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAdmin() {
+      return request.auth != null && request.auth.uid == 'L39Yo1Ckeofsu6pOZImFCFP8CeT2';
+    }
+    function gameState() {
+      return get(/databases/$(database)/documents/game/state).data;
+    }
+
+    // Round status and results: anyone can watch, only the instructor can change
+    match /game/state {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // One guess per signed-in browser, only while that round is open
+    match /rounds/{roundId}/guesses/{uid} {
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == uid);
+      allow create: if request.auth != null
+        && request.auth.uid == uid
+        && gameState().status == 'open'
+        && gameState().roundId == roundId
+        && request.resource.data.keys().hasOnly(['name', 'guess', 'at'])
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 60
+        && request.resource.data.guess is int
+        && request.resource.data.guess >= 0
+        && request.resource.data.guess <= 100
+        && request.resource.data.at == request.time;
+      allow update, delete: if isAdmin();
+    }
+  }
+}
