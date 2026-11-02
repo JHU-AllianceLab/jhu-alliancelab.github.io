@@ -396,7 +396,7 @@ After this class, you will be familiar with the state of the art and open challe
   <td>7</td>
   <td>Oct 14</td>
   <td>13</td>
-  <td>Cooperative games and value alignment
+  <td>Cooperative games and value alignment I
   <br>
   <a href="/teaching/HCR/game/" target="_blank">[Game link - student]</a> <a href="/teaching/HCR/game/?instructor" target="_blank">[Game link - instructor]</a>
   </td>
@@ -507,7 +507,8 @@ After this class, you will be familiar with the state of the art and open challe
   <td>10</td>
   <td>Nov 2</td>
   <td>18</td>
-  <td>Inverse RL and games</td>
+  <td>Cooperative games and value alignment II</td>
+  <!-- <td>Inverse RL and games</td> -->
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span><br>
