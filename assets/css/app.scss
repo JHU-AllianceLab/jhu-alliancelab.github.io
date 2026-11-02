@@ -1827,3 +1827,127 @@ tr.wed-row {
   .halloween-feature { padding: 1.4rem 1rem 1rem; }
   .hw-web { width: 70px; height: 70px; }
 }
+
+// ═══════════════════════════════════════════════════════
+//  COURSE GAME PORTAL (/teaching/HCR/game/)
+// ═══════════════════════════════════════════════════════
+.game-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.game-rules {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--heading);
+  margin-bottom: 1.5rem !important;
+}
+
+.game-rules-sub {
+  display: block;
+  font-size: .9rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: .35rem;
+}
+
+.game-accent { color: #F28C28; }
+
+.game-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.game-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label { font-weight: 600; color: var(--text-main); }
+  .input { margin-top: .35rem; font-size: 1.1rem; }
+  .button { align-self: flex-start; }
+}
+
+.game-muted { color: var(--muted); }
+.game-error { color: #D64545; font-weight: 600; min-height: 1.2em; }
+.game-submitted { font-size: 1.1rem; color: var(--text-main); margin-bottom: .5rem !important; }
+
+.game-verdict {
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+  padding: .8rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem !important;
+
+  &--win { background: rgba(46, 160, 67, .15); color: #2E8540; }
+  &--lose { background: var(--bg-blue); color: var(--text-main); }
+  &--none { background: var(--bg-soft); color: var(--muted); }
+}
+
+:root[data-theme="dark"] .game-verdict--win { color: #6FDC8C; }
+
+.game-results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.game-stat {
+  background: var(--bg-soft);
+  border-radius: 8px;
+  padding: .7rem .9rem;
+  display: flex;
+  flex-direction: column;
+
+  span { font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  strong { font-size: 1.5rem; color: var(--heading); }
+
+  &--win { background: rgba(241, 196, 0, .16); }
+}
+
+.game-winners { font-size: 1.05rem; color: var(--text-main); text-align: center; }
+
+.game-admin { border-color: var(--jhu-spirit); }
+
+.game-admin-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .6rem;
+  color: var(--heading);
+}
+
+.game-badge {
+  font-size: .75rem;
+  padding: .15rem .6rem;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--muted);
+
+  &.is-open { background: rgba(46, 160, 67, .18); color: #2E8540; }
+}
+
+.game-admin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: .8rem 0;
+}
+
+.game-names { color: var(--text-mid); font-size: .9rem; }
+
+.game-table {
+  background: transparent;
+  color: var(--text-main);
+
+  th { color: var(--heading) !important; }
+  td, th { border-color: var(--border) !important; }
+  tr.is-winner { background: rgba(241, 196, 0, .16); font-weight: 700; }
+}
