@@ -269,11 +269,23 @@ pre {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: .01em;
-  padding-left: .975rem;
-  padding-right: .975rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
   border-bottom: 3px solid transparent;
   margin-bottom: -3px;
   transition: color .2s, border-color .2s !important;
+}
+
+// Narrower desktops: shrink the menu so "Contact" doesn't run off the edge
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .navbar-item,
+  .navbar.is-primary .navbar-item,
+  .navbar.is-primary .navbar-link {
+    font-size: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+  .navbar-logo { margin-right: .5rem; }
 }
 
 .navbar.is-primary .navbar-item:focus,
