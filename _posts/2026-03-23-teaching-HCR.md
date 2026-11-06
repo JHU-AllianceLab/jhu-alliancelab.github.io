@@ -236,7 +236,7 @@ After this class, you will be familiar with the state of the art and open challe
   </td>
   <td>
     <strong>Required Reading:</strong> <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-control-071723-102940" target="_blank">The Safety Filter: A Unified View of Safety-Critical Control in Autonomous Systems. Hsu et al. (2024)</a><br>
-    <strong>Optional Reading:</strong> <a href="TODO" target="_blank">Handbook on Safety Certificates: Techniques from Hamilton-Jacobi Reachability Analysis and Control Barrier Functions. Wang et al. (2026) [Link available in October]</a>
+    <strong>Optional Reading:</strong> <a href="https://arxiv.org/abs/2611.07537" target="_blank">Unified Overview of Safety Certificate Functions: Techniques from Hamilton-Jacobi Reachability and Control Barrier Functions. Wang et al. (2026)</a>
     
   </td>
 </tr>
