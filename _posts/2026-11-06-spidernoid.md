@@ -18,10 +18,10 @@ hero_scrim: true
 
 # Required
 # Title of the research post
-title: "SpiderNoid: Temperature-Aware Crawling Control for a Humanoid"
+title: "SpiderNoid: Crawling Control for a Humanoid"
 
 # Short description used for previews 
-description: "We teach a Unitree G1 humanoid to walk, get down onto all fours, crawl, and stand back up. Policies are trained in simulation against a model of motor heating, so the robot can hold still and crawl for long sessions without tripping its motors' thermal cut-off, and they transfer directly to the real robot."
+description: "We enable a Unitree G1 humanoid to transition into a four-limbed crawling posture, crawl, and return to standing. The policies are trained in simulation and transfer directly to the real robot."
 
 # Publication date (YYYY-MM-DD HH:MM:SS)
 date: 2026-11-06 10:00:00
@@ -47,9 +47,7 @@ featured: true
 link: https://github.com/JHU-AllianceLab/humanoid-crawl-with-G1-temperature-aware#real-robot-testing
 ---
 ## Overview
-We teach a Unitree G1 humanoid (29-DoF) to walk, get down onto all fours, crawl, and stand back up. Three policies (walk, stand ↔ crawl, and crawl) are trained in [mjlab](https://github.com/mujocolab/mjlab) with PPO and switched by a state machine with safety gates at each hand-over. The forearms serve as front legs: 3D-printed wrist braces lock the wrists and extend them into rounded feet.
-
-A key challenge is motor heating. Our first real-robot crawl tripped the motors' 85 °C thermal stop while the robot was simply holding still, because nothing in training accounted for sustained load. We therefore fine-tune the policies against a thermal model of every motor, penalizing instantaneous and sustained heat and keeping joints away from their end stops. This spreads load across motors and lowers the peak estimated motor temperature from 48 °C to 31 °C, allowing long crawling sessions on the real robot.
+We enable a Unitree G1 humanoid (29-DoF) to transition from standing into a four-limbed crawling posture, crawl forward and turn, and return to standing. Two policies, one for the stand ↔ crawl transition and one for crawling (with two gait styles), are trained in [mjlab](https://github.com/mujocolab/mjlab) with PPO and switched by a state machine with safety gates at each hand-over. The forearms serve as front legs: 3D-printed wrist braces lock the wrists and extend them into rounded feet.
 
 Code, deployable policies, and hardware files are available on [GitHub](https://github.com/JHU-AllianceLab/humanoid-crawl-with-G1-temperature-aware#real-robot-testing).
 
