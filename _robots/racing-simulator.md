@@ -1,6 +1,6 @@
 ---
 title: Podium1Racing P3 Sim Rig Turnkey
-subtitle: Racing/Flight Simulator
+subtitle: Driving/Flight Simulator
 order: 5
 layout: team_member_personal_page
 image: img/robots/P3_1.jpg
