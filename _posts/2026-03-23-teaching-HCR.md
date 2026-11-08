@@ -396,7 +396,9 @@ After this class, you will be familiar with the state of the art and open challe
   <td>7</td>
   <td>Oct 14</td>
   <td>13</td>
-  <td>Cooperative games and value alignment I
+  <td>Cooperative games I: Schelling equilibrium, cognitive hierarchy
+  <br>
+  <a href="https://drive.google.com/file/d/1UxsiD1uiWCVTQRJqUULvFH6V1CMa_O03/view?usp=sharing" target="_blank">[Slides]</a>
   <br>
   <a href="/teaching/HCR/game/" target="_blank">[Game link - student]</a> <a href="/teaching/HCR/game/?instructor" target="_blank">[Game link - instructor]</a>
   </td>
@@ -507,7 +509,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>10</td>
   <td>Nov 2</td>
   <td>18</td>
-  <td>Cooperative games and value alignment II</td>
+  <td>Cooperative games II: Assistance games, pragmatic-pedagogic equilibrium
+  <br>
+  <a href="https://drive.google.com/file/d/1UxsiD1uiWCVTQRJqUULvFH6V1CMa_O03/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <!-- <td>Inverse RL and games</td> -->
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
@@ -557,7 +562,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>11</td>
   <td>Nov 9</td>
   <td>20</td>
-  <td>Legibility and predictability</td>
+  <td>Legibility and predictability
+  <br>
+  <a href="https://drive.google.com/file/d/1UxsiD1uiWCVTQRJqUULvFH6V1CMa_O03/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span>
