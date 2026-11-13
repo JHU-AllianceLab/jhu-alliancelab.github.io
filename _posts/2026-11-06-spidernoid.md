@@ -33,9 +33,9 @@ permalink: /spidernoid/
 # Path should point to img/posts/post-title/
 hero_fallback: /img/posts/spidernoid/spidernoid_teaser.jpg
 
-hero_video: https://haiminhu.wordpress.com/wp-content/uploads/2026/10/spidernoid.mp4
+hero_video: /img/posts/spidernoid/real_crawl_sunny.mp4
 thumbnail: /img/posts/spidernoid/spidernoid_card.jpg
-video: https://haiminhu.wordpress.com/wp-content/uploads/2026/10/spidernoid.mp4
+video: /img/posts/spidernoid/real_crawl_sunny.mp4
 
 # Set to true when ready to publish
 published: true
@@ -44,12 +44,12 @@ published: true
 # Set to true to feature on the homepage
 featured: true
 
-link: https://github.com/JHU-AllianceLab/humanoid-crawl-with-G1-temperature-aware#real-robot-testing
+link: https://github.com/bethalageetachandraraju/humanoid-crawl-with-G1-temperature-aware
 ---
 ## Overview
 We enable a Unitree G1 humanoid (29-DoF) to transition from standing into a four-limbed crawling posture, crawl forward and turn, and return to standing. Two policies, one for the stand ↔ crawl transition and one for crawling (with two gait styles), are trained in [mjlab](https://github.com/mujocolab/mjlab) with PPO and switched by a state machine with safety gates at each hand-over. The forearms serve as front legs: 3D-printed wrist braces lock the wrists and extend them into rounded feet.
 
-Code, deployable policies, and hardware files are available on [GitHub](https://github.com/JHU-AllianceLab/humanoid-crawl-with-G1-temperature-aware#real-robot-testing).
+Code, deployable policies, and hardware files are available on [GitHub](https://github.com/bethalageetachandraraju/humanoid-crawl-with-G1-temperature-aware).
 
 ## Contributors
 Geeta Chandra Raju Bethala (demo) and Krishna Murthy Jatavallabhula (video)
