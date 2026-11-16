@@ -594,7 +594,10 @@ After this class, you will be familiar with the state of the art and open challe
   <td>12</td>
   <td>Nov 16</td>
   <td>22</td>
-  <td>AI coaching</td>
+  <td>AI coaching
+  <br>
+  <a href="https://drive.google.com/file/d/1ZLA9Q5XFfa0I_E5Szy6aUjOWy3fL2GAP/view?usp=sharing" target="_blank">[Slides]</a>
+  </td>
   <td>
     <span class="tag is-success is-light">Lecture</span><br>
     <span class="tag is-warning is-light">Debate</span>
